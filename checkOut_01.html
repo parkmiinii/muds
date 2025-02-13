@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDS</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="inquireBox active">
+        <span>Private Inquiry</span>
+        <span><a href="writeInquiry.html">Write &amp; Submit 1:1 Question</a></span>
+        <input type="button" value="close" class="btn_close">
+    </div>
+    <header>
+        <div class="shopPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <h2>categories</h2>
+                <ul>
+                    <li>
+                        <b>stationery</b>
+                        <ol>
+                            <li><a href="list_notebook.html">Notebooks / Planners</a></li>
+                            <li><a href="list_writing.html">Writing utensils</a></li>
+                            <li><a href="list_cards.html">Cards / Postcards</a></li>
+                            <li><a href="list_business.html">Business card holders</a></li>
+                            <li><a href="list_stationery_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Fashion</b>
+                        <ol>
+                            <li><a href="list_handkerchiefs.html">handkerchiefs / Scarves</a></li>
+                            <li><a href="list_bags.html">Bags / Wallets</a></li>
+                            <li><a href="list_accessories.html">Accessories</a></li>
+                            <li><a href="list_umbrellas.html">Umbrellas / Parasols</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Digital / Mobile</b>
+                        <ol>
+                            <li><a href="list_mobile.html">Mobile accessories</a></li>
+                            <li><a href="list_chargers.html">Chargers</a></li>
+                            <li><a href="list_smartToks.html">Smart toks</a></li>
+                            <li><a href="list_digital_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Crafts</b>
+                        <ol>
+                            <li><a href="list_nacre.html">Nacre</a></li>
+                            <li><a href="list_ceramic.html">Ceramic</a></li>
+                            <li><a href="list_metal.html">Metal</a></li>
+                            <li><a href="list_craft_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Interior props</b>
+                        <ol>
+                            <li><a href="list_miniature.html">Miniatures</a></li>
+                            <li><a href="list_incense.html">Incense / Fragrance / Candles</a></li>
+                            <li><a href="list_lamps.html">Lamps / Lights</a></li>
+                            <li><a href="list_art.html">Art prints</a></li>
+                            <li><a href="list_cushions.html">Cushions / Fabrics</a></li>
+                            <li><a href="list_interior_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="list_sale.html">Sale</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="list_new.html">new arrival</a>
+                <a href="list_popular.html">popular</a>
+            </div>
+        </div>
+        <!-- shopPanel fin -->
+
+        <div class="contactPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <a href="announce_list.html">announcement</a>
+                <a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a>
+                <a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div>
+                <address>
+                    <a href="tel:+8227492333">02-749-2333</a>
+                    <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                    <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+                </address>
+                <p>Hours 10:00 AM ~ 4:00 PM / Lunch Break:12:00 PM~1:30 PM<br>Closed Sat, Sun, Public Holidays</p>
+            </div>
+            <div>
+                <a href="https://facebook.com/nationalmuseumfoundation" target="_blank"><img src="images/ico_sns_facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/muds_museumgoods/" target="_blank"><img src="images/ico_sns_instagram.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank"><img src="images/ico_sns_youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <!-- contactPanel fin -->
+
+        <div class="searchPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <form action="list_accessories.html">
+                    <input type="search" placeholder="What are you looking for?">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+        <!-- searchPanel fin -->
+
+        <div class="accPanel">
+            <input type="button" value="close" class="btn_close">
+            <ul>
+                <li><a href="logIn.html">Log in</a></li>
+                <li><a href="trackOrders.html">Track orders</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="inquiry.html">1:1 Inquiry</a></li>
+                <li><a href="withdrawal.html">Withdrawal</a></li>
+            </ul>
+        </div>
+        <!-- accPanel -->
+
+        <div class="cartPanel">
+            <input type="button" value="close" class="btn_close">
+            <div class="cartProd">
+                <form action="checkOut_01.html">
+                    <div>
+                        <h2>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</h2>
+                        <button type="button" data-panel="cartEmpty"><img src="images/ico_del.png" alt="delete"></button>
+                        <img src="images/product/5_interiorProps/6_andMore/13/1.jpg" alt="product image">
+                        <ul>
+                            <li>
+                                <strong>options</strong>
+                                <p>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</p>
+                            </li>
+                            <li>
+                                <strong>quantity</strong>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="quantMinus">
+                                    <input type="number" class="quantNumb" id="quantNumb" value="1" min="1" max="99" step="1">
+                                    <input type="button" value="+" class="quantPlus">
+                                </div>
+                            </li>
+                            <li>
+                                <strong>price</strong>
+                                <span>KRW 30,000</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>total</strong>
+                        <p>KRW <output id="totalPrice">30000</output></p>
+                        <input type="submit" value="check out" class="btn_green">
+                    </div>
+                </form>
+            </div>
+            <div class="cartEmpty">
+                <h2>your cart is empty</h2>
+                <span><a href="list_notebook.html">shop now</a></span>
+            </div>
+        </div>
+        <!-- cartPanel fin -->
+        
+        <nav>
+            <ol>
+                <li>
+                    <button type="button" data-panel="shopPanel">
+                        <bdi>一.</bdi>
+                        <i>shop</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="contactPanel">
+                        <bdi>二.</bdi>
+                        <i>contact</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="searchPanel">
+                        <bdi>三.</bdi>
+                        <i>search</i>
+                    </button>
+                </li>
+            </ol>
+            <h1><a href="index.html"><img src="images/logo.png" alt="MUDS"></a></h1>
+            <ol>
+                <li>
+                    <button type="button" data-panel="accPanel">
+                        <bdi>四.</bdi>
+                        <i>account</i>
+                    </button>
+                    
+                </li>
+                <li>
+                    <button type="button" data-panel="cartPanel">
+                        <bdi>五.</bdi>
+                        <i>cart</i>
+                        <span>+99</span>
+                    </button>
+                </li>
+                <li><a href="https://www.museumshop.or.kr/kor/main.do" target="_blank">ko</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="checkOutContainer">
+        <aside>
+            <h2>Product list</h2>
+            <ol>
+                <li>
+                    <figure>
+                        <img src="images/inte_and_13.jpg" alt="product image">
+                        <figcaption>1</figcaption>
+                    </figure>
+                    <h3>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</h3>
+                    <ul>
+                        <li>
+                            <strong>options</strong>
+                            <span>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</span>
+                        </li>
+                        <li>
+                            <strong>giftwrapping</strong>
+                            <span>Select None(+KRW 0)</span>
+                        </li>
+                        <li>
+                            <strong>price</strong>
+                            <span>KRW 30,000</span>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <ul>
+                <li>
+                    <b>subtotal</b><span>KRW 30,000</span>
+                </li>
+                <li>
+                    <b>shipping</b><span>KRW 4,000</span>
+                </li>
+                <li>
+                    <b>total</b><span>KRW 34,000</span>
+                </li>
+            </ul>
+        </aside>
+        <div>
+            <form action="checkOut_02.html">
+                <fieldset>
+                    <legend>Order Form</legend>
+                    <div>
+                        <h3>Order information</h3>
+                        <ul>
+                            <li>
+                                <label for="orderName" class="required_info">Name</label>
+                                <input type="text" id="orderName">
+                            </li>
+                            <li>
+                                <label for="orderCellphone" class="required_info">Cellphone Number</label>
+                                <input type="tel" id="orderCellphone" placeholder="Ex> 01012341234">
+                            </li>
+                            <li>
+                                <label for="orderEmail" class="required_info">Email Address</label>
+                                <input type="email" id="orderEmail" placeholder="Ex> muds@gmail.com">
+                            </li>
+                            <li>
+                                <label for="orderAddress" class="required_info">Address</label>
+                                <input type="text" id="orderAddress">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Shipping information</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="sameInfo">
+                                <label for="sameInfo">Shipping information is the same as the order information.</label>
+                            </li>
+                            <li>
+                                <label for="shippingName" class="required_info">Name</label>
+                                <input type="text" id="shippingName">
+                            </li>
+                            <li>
+                                <label for="shippingCellphone" class="required_info">Cellphone Number</label>
+                                <input type="tel" id="shippingCellphone" placeholder="Ex> 01012341234">
+                            </li>
+                            <li>
+                                <label for="shippingEmail" class="required_info">Email Address</label>
+                                <input type="email" id="shippingEmail" placeholder="Ex> muds@gmail.com">
+                            </li>
+                            <li>
+                                <label for="shippingAddress" class="required_info">Address</label>
+                                <input type="text" id="shippingAddress">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Personal Data Collection Agreement</h3>
+                        <ol>
+                            <li>
+                                1. List of Personal Data Collection and Use: Name (English), Birth Date, Sex, Email Address, Cellphone Number, Home Number, Home Address, Purchase and Reservation History 
+                            </li>
+                            <li>
+                                2. Collection and Use Purpose: Customer Satisfaction Survey, Newsletter, Introducing products of the Cultural Foundation, Events and Promotional Deals 
+                            </li>
+                            <li>
+                                3. Duration of Storage and Use: From the day of agreement to the day of canceling an account.
+                            </li>
+                        </ol>
+                        <span>
+                            <input type="checkbox" id="collectionAgree">
+                            <label for="collectionAgree">I agree with the terms of collecting and using my personal data.</label>
+                        </span>
+                    </div>
+                    <p>
+                        Please enter accurate address and postal code.<br>
+                        Delivery might be delayed or returned if address or postal code are missing.<br>
+                        The maximum length of an address (Detail + City + State) is 368 characters.<br>
+                        Delivery may be delayed by delivery company conditions.
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment</legend> 
+                    <ul>
+                        <li>
+                            <input type="radio" name="payment" id="creditCard" data-tabName="creditCardTab">
+                            <label for="creditCard">Credit Card</label>
+                            <div class="creditCardTab">
+                                <span class="selectComponent">
+                                    <select name="SelectCardCompany" id="cardCompany">
+                                        <option value="select">Select Card Company</option>
+                                        <option value="bc">BC Card</option>
+                                        <option value="kb">KB Kookmin Card</option>
+                                        <option value="samsung">Samsung Card</option>
+                                        <option value="shinhan">Shinhan Card</option>
+                                        <option value="woori">Woori Card</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="payment" id="virtualAccount" data-tabName="virtualAccountTab">
+                            <label for="virtualAccount">Virtual Account</label>
+                            <div class="virtualAccountTab">
+                                <strong>* If payment is not made within 7 days of ordering, your order will be cancelled.</strong>
+                                <label for="refundInfo">Refund Account Information</label>
+                                <span class="selectComponent">
+                                    <select name="SelectCardCompany" id="refundInfo">
+                                        <option value="select">Select Card Company</option>
+                                        <option value="bc">BC Card</option>
+                                        <option value="kb">KB Kookmin Card</option>
+                                        <option value="samsung">Samsung Card</option>
+                                        <option value="shinhan">Shinhan Card</option>
+                                        <option value="woori">Woori Card</option>
+                                    </select>
+                                </span>
+                                <input type="text" id="depositerName" placeholder="Depositer Name">
+                                <input type="text" id="accountNumb" placeholder="Account Number('-'except)">
+                                <p>When you cancel or return an order, we will deposit the money into your account.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="payment" id="otherPay" data-tabName="otherPayTab">
+                            <label for="otherPay">Pay</label>
+                            <ol class="otherPayTab">
+                                <li>
+                                    <input type="radio" name="selctPay" id="naverPay"> 
+                                    <label for="naverPay">naver pay</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="selctPay" id="kakaoPay"> 
+                                    <label for="kakaoPay">kakao pay</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="selctPay" id="samsungPay"> 
+                                    <label for="samsungPay">samsung pay</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="selctPay" id="tossPay"> 
+                                    <label for="tossPay">toss pay</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="selctPay" id="payco"> 
+                                    <label for="payco">payco</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="selctPay" id="ssgPay"> 
+                                    <label for="ssgPay">ssg pay</label>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <input type="radio" name="payment" id="quickAccount">
+                            <label for="quickAccount">Quick Account Transfer</label>
+                        </li>
+                    </ul>
+                    <button type="button" data-popup="interestFreePopup">Credit card interest-free installment information</button>
+                    <div class="interestFreePopup">
+                        <img src="images/interest_free.png" alt="information of interest free installment">
+                        <button type="button" class="btn_close">close</button>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="termsAndConditions">
+                        <label for="termsAndConditions">[Required] Payment service terms and conditions, consent to personal information processing</label>
+                        <ol> 
+                            <li>
+                                <label for="termsOfService">Terms of Service</label>
+                                <textarea id="termsOfService">
+Basic terms and conditions for electronic financial transactions (for users)		
+Article 1 (Purpose)		
+These terms and conditions ensure the stability and reliability of electronic financial transactions by establishing basic matters regarding electronic financial transactions between users and Toss Payments Co., Ltd. (hereinafter referred to as the “Company”), which provides electronic payment agency services and payment deposit services. The purpose is to secure it.		
+Article 2 (Definition of terms)		
+The definitions of terms set forth in these Terms and Conditions are as follows.		
+① ‘Electronic financial transaction’ means that the company provides electronic payment agency services and payment deposit services (hereinafter referred to as ‘electronic financial transaction services’) through electronic devices, and users face or communicate directly with members of the company. This refers to a transaction that uses this in a computerized manner without doing so.		
+② ‘Electronic payment agency service’ refers to a service that transmits or receives payment information or acts as an agent or mediator for the settlement of the price when purchasing goods or using services by electronic means.		
+③ ‘Payment deposit service’ means that a user may use all or part of the price (hereinafter referred to as ‘payment amount’) for goods or services (hereinafter referred to as ‘goods, etc.’) when purchasing goods or using services. When payment is made in advance before receiving the supply, it refers to a service in which the company deposits the payment until the user confirms receipt of the product or use of the service.		
+④ ‘User’ refers to a person who agrees to these Terms and Conditions and uses the electronic payment agency service provided by the Company.		
+⑤ ‘Access media’ refers to means or information used to give transaction instructions in electronic financial transactions or to ensure the truth and accuracy of users and transaction details, including electronic cards and equivalent electronic information (including credit card numbers). , refers to the certificates under the ‘Electronic Signature Act’, user numbers registered with financial institutions or electronic financial business operators, user biometric information, and passwords required to use the above means or information, as stipulated in Article 2, Paragraph 10 of the Electronic Financial Transactions Act.		
+⑥ ‘Transaction instruction’ means that a user instructs a financial institution or electronic financial business operator to process an electronic financial transaction pursuant to an electronic financial transaction agreement.		
+⑦ ‘Error’ refers to a case where an electronic financial transaction is not carried out in accordance with the electronic financial transaction agreement or the user’s transaction instructions without the user’s intention or negligence.		
+Article 3 (Specification and change of terms and conditions)		
+① The company posts these terms and conditions before users use the electronic payment agency service and allows users to check the important contents of these terms and conditions.		
+② If requested by the user, the Company will provide the user with a copy of these Terms and Conditions in writing or by sending an electronic document.		
+③ When the Company changes the Terms and Conditions, it will notify users by posting the changed Terms and Conditions on the payment information input screen and on the Company’s website one month prior to the effective date.		
+④ Users may terminate electronic financial transaction contracts from the time the changes to the terms and conditions pursuant to the provisions of paragraph 3 are posted or notified until the business day preceding the effective date of the changed terms and conditions. If the user does not raise an objection to the changes to the Terms and Conditions within the period stated in the previous paragraph, the changes to the Terms and Conditions are deemed to have been approved.		
+Article 4 (Types of electronic payment agency services)		
+Electronic payment agency services provided by the company are classified according to payment method as follows.		
+① Credit card payment agency service: In cases where the payment method provided by the user for payment of the payment amount is a credit card, the company transmits and receives credit card payment information and settles the payment amount through an electronic payment system. This refers to an intermediary service.		
+② Account transfer agency service: This is a real-time money transfer service that allows users to withdraw payment from their account registered with a financial institution through the company's electronic payment system and transfer it to the desired account.		
+③ Virtual account service: This refers to a service in which payment is made through the issuance of a unique disposable account for the user automatically through the company's electronic payment system when the user wishes to pay in cash.		
+④ Other: Services provided by the company include ‘mobile phone payment agency service’, ‘KT phone (ARS, phoneville) payment agency service’, and ‘gift certificate payment agency service’ depending on the type of payment method.		
+Article 5 (Contents of payment deposit service)		
+① Users (including those who will receive goods, etc. if there is consent from the user; hereinafter the same shall apply in this Article) must notify the Company of the fact that goods, etc. have been supplied within 3 business days from the date of receipt of goods, etc.		
+② After receiving notification of the receipt of goods, etc. from the user, the company pays the payment amount to the mail order seller within the deadline determined between the company and the mail order seller.		
+③ If the user does not notify the company of the supply of goods, etc. without providing a justifiable reason even after 3 business days from the date of receiving the goods, the company may pay the payment amount to the mail order seller without the user's consent. .		
+④ If a reason arises for the user to receive a refund of the payment amount before paying the payment amount to the mail order seller, the Company will refund the payment amount to the consumer.		
+⑤ The Company may establish the Payment Deposit Service Terms of Use separate from these Terms and Conditions in order to determine specific rights and obligations related to the use of the Payment Deposit Service with users.		
+Article 6 (Selection, management, etc. of access media)		
+① When providing electronic payment agency services, the company may select an access medium to verify the user's identity, authority, and contents of transaction instructions.		
+② Users may not rent access media to a third party, delegate its use, or provide it for transfer or collateral purposes.		
+③ Users must not leak, expose, or neglect their access media to third parties, and must exercise sufficient caution to prevent theft, forgery, or alteration of their access media.		
+④ When the Company receives notification from a user of the loss or theft of an access medium, the Company is responsible for compensating the user for any damages caused by a third party using the access medium.		
+Article 7 (Company Responsibility)		
+① Users are liable for damages incurred by users due to accidents caused by forgery or alteration of access media. However, if the user lends the access medium to a third party or delegates its use, or provides it for the purpose of transfer or collateral, the company must take additional security measures required during electronic financial transactions to strengthen security if the user has a legitimate reason. If an accident occurs due to the use of an access medium obtained by false or other illegal means by intruding into the information and communications network by refusing to do so, the user violates Article 6, Paragraph 2, or a third party uses the user's access medium without permission. If a user leaks, exposes, or neglects his or her access medium despite knowing or should have known that electronic financial transactions can be made, the user may be held responsible for all or part of the liability.		
+② If damage occurs to a user due to an accident that occurs during the electronic transmission or processing of a contract or transaction instruction, the Company is responsible for compensating for the damage. However, in cases where damage occurs to a user who falls under the proviso to Paragraph 1 of this Article or is a corporation (excluding small businesses under Article 2, Paragraph 2 of the ‘Framework Act on Small and Medium Enterprises’), the Company establishes and implements security procedures to prevent accidents. If reasonably required due diligence, such as strict compliance, has been fulfilled, all or part of the responsibility may be borne by the user.		
+③ The Company uses electronic devices for electronic financial transactions or access media obtained by false or other illegal means by intruding into the information and communications network pursuant to Article 2 (1) 1 of the 'Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.' If damage occurs to the user due to an accident caused by the user, the user is responsible for compensating for the damage.		
+Article 8 (Confirmation of transaction details)		
+① The company allows the user to check the user's transaction details (including the user's 'error correction request and processing results') through an electronic method agreed upon in advance with the user, and if there is a request from the user, We will issue a document regarding the transaction details in electronic form, facsimile, or written form within two weeks from the date of receipt. If the transaction details cannot be confirmed due to an operational failure of the electronic device or other reasons, the reason must be immediately notified using the Internet, etc., and the user must be able to check the transaction details from the time the reason has ended.		
+② Among the transaction details provided by the company to users, the name or number of the transaction account, the type and amount of the transaction, information indicating the counterparty, transaction date, type of electronic device, information that can identify the electronic device, and the corresponding electronic financial transaction Records of access to electronic devices related to this shall be kept for 5 years, records of small electronic financial transactions with a transaction amount of less than 10,000 won, records of transaction approval when using electronic payment methods, and matters pertaining to the user's request for error correction and processing results. The period covered is one year, but matters regarding the commissions received by the company in return for providing electronic payment agency services to affiliated stores are excluded from the transaction details provided.		
+③ If a user wishes to request written issuance as stipulated in Paragraph 1 of this Article, the request may be made to the following address and phone number.		
+Address: Toss Payments Co., Ltd., 15th floor, Korea Intellectual Property Center, 131 Teheran-ro, Gangnam-gu, Seoul		
+Email address: support@tosspayments.com		
+Phone number: 1544-7772		
+Article 9 (Correction of errors, etc.)		
+① If a user becomes aware of an error while using the electronic payment agency service, he or she may request the company to correct the error.		
+② When the Company receives a request for correction of an error pursuant to the provisions of the preceding paragraph, it will immediately investigate and process the request and notify the user of the results within two weeks from the date of receiving the correction request.		
+③ Users may request corrections under this provision to the following address and phone number.		
+Address: Toss Payments Co., Ltd., 15th floor, Korea Intellectual Property Center, 131 Teheran-ro, Gangnam-gu, Seoul		
+Email address: support@tosspayments.com		
+Phone number: 1544 - 7772		
+④ If the Company becomes aware of an error in an electronic financial transaction, it will immediately investigate and process the error and notify the user of the cause of the error and the results of the processing within two weeks from the date of becoming aware of the error.		
+Article 10 (Creation and preservation of electronic payment agency service use records)		
+① The company creates and preserves records that enable users to track and search the contents of transactions using the electronic payment agency service, or to confirm or correct them when errors occur in the contents.		
+② The types and preservation methods of records that the company must preserve in accordance with the provisions of the preceding paragraph shall be in accordance with the provisions of Article 8, Paragraph 2.		
+Article 11 (Restrictions on withdrawal of transaction instructions)		
+① If a user makes an electronic payment transaction, the effect of payment is subject to the provisions of Article 13 of the Electronic Financial Transaction Act.		
+② Users may withdraw transaction instructions until payment takes effect in accordance with the provisions of Article 13 of the Electronic Financial Transactions Act. However, withdrawal of transaction instructions may be restricted in accordance with the regulations of financial institutions, mobile carriers, etc.		
+③ Methods and restrictions on withdrawal of transaction instructions for each electronic payment method are as follows.		
+Credit card payment, account transfer payment, virtual account payment: Cancellation is possible only if the subscription is withdrawn in the purchase of goods or service use transaction in accordance with relevant laws and regulations, such as the Act on Consumer Protection in Electronic Commerce, etc. do.		
+Mobile phone payment, KT phone (ARS, Phoneville) payment: Among requests for cancellation of subscription according to the method in the preceding item (a), cancellation is possible only for transactions that occurred up to the end of the month on the payment date in accordance with the mobile carrier's regulations.		
+Gift certificate payment: If you request withdrawal of subscription according to the method in the preceding paragraph (a), you can withdraw your subscription within 10 days from the date of payment only if you are unable to use the normal service due to system failure, etc.		
+Article 12 (Withdrawal consent and withdrawal of collection transfer)		
+① If there is a request from a user, the company will consent to withdrawal in a manner pursuant to relevant laws such as the Electronic Financial Transactions Act on behalf of the financial company, etc., so that the financial company where the user's account is opened can carry out the collection transfer. .		
+② The company submits the user's consent pursuant to the preceding paragraph to the relevant financial company that performs the collection and transfer.		
+③ The user may request withdrawal of consent pursuant to the provisions of paragraph 1 from the company or the relevant financial institution, etc. until the withdrawal record is completed in the ledger of the user's account.		
+④ Notwithstanding the preceding paragraph, in the case of transactions processed in bulk or transactions based on reservations, the company or financial company, etc. may set a different time for withdrawal of consent in accordance with the agreement made with the user in advance.		
+⑤ If the user requests withdrawal of withdrawal consent pursuant to Paragraph 3, the user may raise an objection to the person in charge under Article 14 Paragraph 1 regarding the withdrawal that occurred after the request for withdrawal of withdrawal consent. However, this provision does not apply to withdrawals that occurred prior to the request to withdraw consent.		
+Article 13 (Prohibition on provision of electronic financial transaction information)		
+In providing electronic payment agency services and payment deposit services, the Company does not obtain the user's consent and discloses information or data regarding the acquired user's personal information, user's account, access medium, and the contents and performance of electronic financial transactions to a third party without the user's consent. It will not be provided to, disclosed to, or used for purposes other than business purposes. However, this does not apply if it is pursuant to the provisions of the proviso to Article 4, Paragraph 1 of the ‘Act on Real Name Financial Transactions and Secrecy’ or if it is pursuant to other laws.		
+Article 14 (Dispute resolution and dispute mediation)		
+① Users may request dispute resolution, such as filing of opinions and complaints and claims for damages, related to the use of electronic payment agency services and payment deposit services to the following dispute resolution officers and staff.		
+Person in charge: Toss Payments RM (Risk) Team		
+Contact information: Phone number 1544-7772, Fax 02-6919-2354		
+Email: rm@tosspayments.com		
+② If a user applies for dispute resolution to the company, the company will inform the user of the results of the investigation or processing within 15 days.		
+③ Users may request the Company's electronic payment agency service and make payments to the Financial Dispute Mediation Committee of the Financial Supervisory Service pursuant to Article 51 of the Act on the Establishment of the Financial Services Commission or the Consumer Agency pursuant to Article 35 Paragraph 1 of the Framework Act on Consumers. You can apply for dispute mediation related to the use of the money deposit service.		
+Article 15 (Obligation to ensure company stability)		
+To ensure the safety and reliability of electronic financial transactions, the company complies with the standards set by the Financial Services Commission in relation to the information technology sector and electronic financial services such as manpower, facilities, and electronic devices for electronic transmission or processing for each type of electronic financial transaction. do.		
+Article 16 (Usage hours)		
+① In principle, the Company provides electronic financial transaction services to users 24 hours a day, 365 days a year. However, it may change depending on the circumstances of the financial institution or other payment method issuer.		
+② If service interruption is unavoidable due to maintenance, inspection, or other technical needs of information and communication facilities or the circumstances of the financial institution or other payment method issuer, the Company shall post the fact of service interruption through any available electronic means at least 3 days prior to service interruption. Services may be temporarily suspended. However, in unavoidable cases such as system failure, urgent program repair, or external factors, the service may be suspended without prior notice.		
+Article 17 (Rules and jurisdiction other than terms and conditions)		
+① Matters not specified in these Terms and Conditions shall be subject to consumer protection laws such as the Electronic Financial Transactions Act, the Act on Consumer Protection in Electronic Commerce, etc., the Mail Order Sales Act, and the Specialized Credit Financial Business Act.		
+② Jurisdiction over disputes arising between the company and users shall be governed by the Civil Procedure Act.
+                                </textarea>
+                            </li>
+                            <li>
+                                <label for="consentToCollection">Consent to collection and use of personal (credit) information</label>
+                                <textarea id="consentToCollection">
+Consent to collection and use of personal (credit) information	
+Toss Payments (hereinafter referred to as the Company) is responsible for the “Act on Use and Protection of Credit Information,” “Electronic Financial Transactions Act,” “Act on Consumer Protection in Electronic Commerce, etc.,” “Promotion of Information and Communications Network Utilization and Information Protection, etc.” We are doing our best to protect user rights and interests by complying with relevant laws and regulations, such as the “Law” and the “Personal Information Protection Act.”	
+1. Purpose of collection and use of personal (credit) information	
+Providing electronic financial transaction services	
+Electronic payment processing (transaction approval, cancellation, refund, etc.) and notification of results	
+User authentication and identity verification during payment process	
+Send payment notification email/text	
+Issuance of cash receipts and tax invoices	
+Providing e-commerce related services such as product delivery	
+Service user management and complaint response	
+Handling customer complaints and complaints	
+Financial accident investigation, dispute resolution, fulfillment of statutory obligations	
+Guide to new information and notices	
+Utilization of statistical data according to demographic characteristics	
+Determination of frequency of use, analysis of statistical characteristics, development of new services	
+Verification of service effectiveness, identification of access frequency, use of statistical data on members’ service use	
+※ The company processes personal information for the above purposes and does not process it for purposes other than those for which consent has been obtained.	
+2. Personal (credit) information items collected and used	
+Electronic payment service users and purchase information	
+Buyer name, buyer ID, product order number, product name, buyer mobile phone number, buyer email, payment amount	
+Payment information by payment method	
+Credit card: card number, expiration date, date of birth or business registration number, first 2 digits of password	
+Cell phone: Cell phone number, date of birth, mobile carrier	
+Virtual account: bank name, depositor name, date of birth or business registration number	
+Gift certificate: Gift certificate number, gift certificate issuer ID, password	
+Cash receipt issuance information: resident registration number, mobile phone number, cash receipt card, other card, business registration number (select one)	
+Payment information reception and payment deposit service: (optional) email address, mobile phone number	
+※ Only items corresponding to the payment method selected by the user are processed.	
+3. Retention and use period of personal (credit) information	
+In principle, once the purpose of collection and use of personal (credit) information is achieved, it is destroyed without delay. However, if there is a need to preserve personal information in accordance with relevant laws or internal company policies, personal information will be retained for the period specified below.	
+Retention period of personal (credit) information	
+division	Conservation grounds
+Records of payment use to prevent fraudulent use	Fraud Prevention and Detection
+Records of use of mobile phone identity verification service	Act on Promotion of Information and Communications Utilization and Information Protection, etc.
+Records of contracts or subscription withdrawals, etc.	Act on Consumer Protection in Electronic Commerce, etc.
+Records of payments over 10,000 won and supply of goods, etc.	Electronic Financial Transactions Act
+Records of payments less than 10,000 won and supply of goods, etc.	Electronic Financial Transactions Act
+Records of consumer complaints or dispute resolution	Act on Consumer Protection in Electronic Commerce, etc.
+Records of website visits or self-simple payment access	ACT ON PROTECTION OF COMMUNICATIONS SECRETS
+4. Users have the right to refuse consent to the company’s collection and use of personal (credit) information.	
+However, please be advised that if you refuse to consent to the collection and use of personal (credit) information, your use of electronic payment services may be restricted.
+                                </textarea>
+                            </li>
+                            <li>
+                                <label for="consentToProvision">Consent to provision of personal (credit) information to third parties</label>
+                                <textarea id="consentToProvision">
+Consent to provision of personal (credit) information to third parties	
+Toss Payments (hereinafter referred to as the Company) is responsible for the “Act on Use and Protection of Credit Information,” “Electronic Financial Transactions Act,” “Act on Consumer Protection in Electronic Commerce, etc.,” “Promotion of Information and Communications Network Utilization and Information Protection, etc.” We are doing our best to protect user rights and interests by complying with relevant laws and regulations, such as the “Law” and the “Personal Information Protection Act.” In order to provide electronic financial transaction services, the company provides personal (credit) information to third parties for each service and payment method as follows.	
+1. Purpose of providing personal (credit) information, recipients and items	
+Purpose of providing personal (credit) information, recipients and items	
+Purpose of provision	
+Credit card payment	
+    
+    
+Overseas card payment	
+Easy payment	
+Credit card ARS payment	
+Account transfer payment	
+Virtual account payment	
+mobile phone payment	
+    
+Gift certificate payment	
+Self-simple payment	Credit card
+    account transfer
+    
+    
+global service	
+Cash receipt service	
+Open banking service	
+(withdrawal transfer, deposit transfer, balance inquiry) provided	
+※ The company provides personal information to third parties for the above purposes, and does not provide or process personal information to third parties for purposes other than those for which consent has been granted.	
+2. Retention and use period of personal (credit) information	
+In principle, personal information is destroyed without delay once the purpose of collection and use of personal information is achieved . However, if there are special provisions in other laws, it will be retained for the period specified in the relevant laws.	
+3. Users have the right to refuse consent to the company’s provision of personal (credit) information to third parties.	
+However, please be advised that if you refuse to consent to the provision of personal (credit) information to a third party, your use of the electronic payment agency service may be restricted.	                                
+                                </textarea>
+                            </li>
+                        </ol>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Make Payment" class="btn_green">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="personalInfo.html">Personal Information Management Policies</a></li>
+                <li><a href="refusal.html">Refusal of Unauthorized Collection of Email Addresses</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div>
+            <address>
+                <a href="tel:+8227492333">02-749-2333</a>
+                <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+            </address>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a></li>
+                <li><a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a></li>
+                <li><a href="https://facebook.com/nationalmuseumfoundation" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/muds_museumgoods/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank">Youtube</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                <img src="images/logo_nmf.png" alt="nmf logo">
+                <img src="images/logo.png" alt="muds logo">
+            </h2>
+        </div>
+    </footer>
+</body>
+</html>

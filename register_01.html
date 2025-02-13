@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDS</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="inquireBox active">
+        <span>Private Inquiry</span>
+        <span><a href="writeInquiry.html">Write &amp; Submit 1:1 Question</a></span>
+        <input type="button" value="close" class="btn_close">
+    </div>
+    <header>
+        <div class="shopPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <h2>categories</h2>
+                <ul>
+                    <li>
+                        <b>stationery</b>
+                        <ol>
+                            <li><a href="list_notebook.html">Notebooks / Planners</a></li>
+                            <li><a href="list_writing.html">Writing utensils</a></li>
+                            <li><a href="list_cards.html">Cards / Postcards</a></li>
+                            <li><a href="list_business.html">Business card holders</a></li>
+                            <li><a href="list_stationery_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Fashion</b>
+                        <ol>
+                            <li><a href="list_handkerchiefs.html">handkerchiefs / Scarves</a></li>
+                            <li><a href="list_bags.html">Bags / Wallets</a></li>
+                            <li><a href="list_accessories.html">Accessories</a></li>
+                            <li><a href="list_umbrellas.html">Umbrellas / Parasols</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Digital / Mobile</b>
+                        <ol>
+                            <li><a href="list_mobile.html">Mobile accessories</a></li>
+                            <li><a href="list_chargers.html">Chargers</a></li>
+                            <li><a href="list_smartToks.html">Smart toks</a></li>
+                            <li><a href="list_digital_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Crafts</b>
+                        <ol>
+                            <li><a href="list_nacre.html">Nacre</a></li>
+                            <li><a href="list_ceramic.html">Ceramic</a></li>
+                            <li><a href="list_metal.html">Metal</a></li>
+                            <li><a href="list_craft_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Interior props</b>
+                        <ol>
+                            <li><a href="list_miniature.html">Miniatures</a></li>
+                            <li><a href="list_incense.html">Incense / Fragrance / Candles</a></li>
+                            <li><a href="list_lamps.html">Lamps / Lights</a></li>
+                            <li><a href="list_art.html">Art prints</a></li>
+                            <li><a href="list_cushions.html">Cushions / Fabrics</a></li>
+                            <li><a href="list_interior_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="list_sale.html">Sale</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="list_new.html">new arrival</a>
+                <a href="list_popular.html">popular</a>
+            </div>
+        </div>
+        <!-- shopPanel fin -->
+
+        <div class="contactPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <a href="announce_list.html">announcement</a>
+                <a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a>
+                <a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div>
+                <address>
+                    <a href="tel:+8227492333">02-749-2333</a>
+                    <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                    <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+                </address>
+                <p>Hours 10:00 AM ~ 4:00 PM / Lunch Break:12:00 PM~1:30 PM<br>Closed Sat, Sun, Public Holidays</p>
+            </div>
+            <div>
+                <a href="https://facebook.com/nationalmuseumfoundation" target="_blank"><img src="images/ico_sns_facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/muds_museumgoods/" target="_blank"><img src="images/ico_sns_instagram.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank"><img src="images/ico_sns_youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <!-- contactPanel fin -->
+
+        <div class="searchPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <form action="list_accessories.html">
+                    <input type="search" placeholder="What are you looking for?">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+        <!-- searchPanel fin -->
+
+        <div class="accPanel">
+            <input type="button" value="close" class="btn_close">
+            <ul>
+                <li><a href="logIn.html">Log in</a></li>
+                <li><a href="trackOrders.html">Track orders</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="inquiry.html">1:1 Inquiry</a></li>
+                <li><a href="withdrawal.html">Withdrawal</a></li>
+            </ul>
+        </div>
+        <!-- accPanel -->
+
+        <div class="cartPanel">
+            <input type="button" value="close" class="btn_close">
+            <div class="cartProd">
+                <form action="checkOut_01.html">
+                    <div>
+                        <h2>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</h2>
+                        <button type="button" data-panel="cartEmpty"><img src="images/ico_del.png" alt="delete"></button>
+                        <img src="images/product/5_interiorProps/6_andMore/13/1.jpg" alt="product image">
+                        <ul>
+                            <li>
+                                <strong>options</strong>
+                                <p>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</p>
+                            </li>
+                            <li>
+                                <strong>quantity</strong>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="quantMinus">
+                                    <input type="number" class="quantNumb" id="quantNumb" value="1" min="1" max="99" step="1">
+                                    <input type="button" value="+" class="quantPlus">
+                                </div>
+                            </li>
+                            <li>
+                                <strong>price</strong>
+                                <span>KRW 30,000</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>total</strong>
+                        <p>KRW <output id="totalPrice">30000</output></p>
+                        <input type="submit" value="check out" class="btn_green">
+                    </div>
+                </form>
+            </div>
+            <div class="cartEmpty">
+                <h2>your cart is empty</h2>
+                <span><a href="list_notebook.html">shop now</a></span>
+            </div>
+        </div>
+        <!-- cartPanel fin -->
+        
+        <nav>
+            <ol>
+                <li>
+                    <button type="button" data-panel="shopPanel">
+                        <bdi>一.</bdi>
+                        <i>shop</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="contactPanel">
+                        <bdi>二.</bdi>
+                        <i>contact</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="searchPanel">
+                        <bdi>三.</bdi>
+                        <i>search</i>
+                    </button>
+                </li>
+            </ol>
+            <h1><a href="index.html"><img src="images/logo.png" alt="MUDS"></a></h1>
+            <ol>
+                <li>
+                    <button type="button" data-panel="accPanel">
+                        <bdi>四.</bdi>
+                        <i>account</i>
+                    </button>
+                    
+                </li>
+                <li>
+                    <button type="button" data-panel="cartPanel">
+                        <bdi>五.</bdi>
+                        <i>cart</i>
+                        <span>+99</span>
+                    </button>
+                </li>
+                <li><a href="https://www.museumshop.or.kr/kor/main.do" target="_blank">ko</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="registerContainer">
+        <div>
+            <ul>
+                <li class="active">
+                    <img src="images/ico_step_1_active.png" alt="icon">
+                    <strong>step 1</strong>
+                    <p>Terms and Conditions Agreement</p>
+                </li>
+                <li>
+                    <img src="images/ico_step_2.png" alt="icon">
+                    <strong>step 2</strong>
+                    <p>Enter Required Information</p>
+                </li>
+                <li>
+                    <img src="images/ico_step_3.png" alt="icon">
+                    <strong>step 3</strong>
+                    <p>Complete Registration</p>
+                </li>
+            </ul>
+        </div>
+        <div class="registerStep1">
+            <form action="register_02.html">
+                <input type="checkbox" id="agreeAll">
+                <label for="agreeAll">Agree to all</label>
+                <fieldset>
+                    <label for="privacyPolicy">Terms of Service and Privacy Policy (Required)</label>
+                    <textarea id="privacyPolicy">
+Chapter 1 Overview
+
+Article 1. These Terms define the requirements and processes necessary to access all services provided by the National Museum Cultural Foundation, hereafter referred to as the FOUNDATION, the rights of the users and the foundation's websites, duties, responsibilities, and miscellanea with regards to the website
+
+Article 2. Effects and Amendments
+
+1. These terms will be made available on the website or in print, or in other forms of appropriate media, and the terms take effect when the member agrees.
+2. The foundation's websites may change the terms without prior warning, and the new terms of service will be made available to members through the website or through e-mail. The new terms of service will take effect immediately upon being made available. 3. If the user does not agree to the changed terms of service, the user may cancel their membership (cancellation of account), and continued use will constitute agreement to the new terms of service. Article
+3. Additional Terms and Conditions
+Matters that are not specified in the Terms of Service shall be governed by relevant Korean laws, regulations, guidelines, standards, and/or general practices.
+
+Article 4. Definitions
+The definitions of the terminology used in the Terms of Service are as follows:
+1. The USER is an individual that receives the services provided by the foundation's websites.
+2. The FOUNDATION’S WEBSITES refer to the domains www.nmf.or.kr, www.theateryong.or.kr, and www.museumshop.or.kr
+3. REGISTRATION is the act of filling out the membership registration form provided on the foundation's websites, agreement to the Terms of Service, and completing the contract for the use of services.
+4. MEMBERS are individuals who have completed membership registration by providing personal data to the foundation's websites, who are therefore able to use the services provided by the website operated by the website.
+5. The PASSWORD is a combination of characters and numbers chosen by the user for the purposes of determining whether the User ID belongs to the user, and to protect the user’s online privacy.
+6. DELETION OF ACCOUNT refers to the termination of the contract for the use of services
+
+Chapter 2. Provision and Use of Services
+
+Article 5. Establishment of Contract for Use of Services
+1. The contract for the use of services is established when the user provides the information as required by the registration form on the foundation's websites.
+2. The foundation's websites may decline or terminate membership for the following reasons:
+A. The user did not provide his/her legal name
+B. The information provided during registration is falsified.
+C. Interfering in other people’s use of the foundation's websites or stealing personal data.
+D. If the user violates the Terms of Service or laws through the use of the foundation's websites.
+E. Inability to meet any other requirements to use the foundation's websites.
+
+Article 6. (Changes to Personal Information)
+1. If any personal data changes after a member registers, the member must personally change it on the website.
+2. The foundation is not responsible for any damages resulting from failure to comply with the previous clause.
+
+Article 7. Deletion or Termination of Member Account
+1. Members may request deletion of their account at any time, and the foundation will comply immediately barring special circumstances in which the deletion of account. must be denied pursuant to relevant laws.
+2. If a member cancels their membership, the member’s personal data is deleted immediately. Once the information is deleted, the former member may not demand that it be restored.
+3. The foundation may limit or terminate membership for any of the following reasons.
+A. Use of falsified information in registration
+B. Involvement in criminal activity
+C. Theft of user ID and password of another member
+D. Intentional disruption of website operations
+E. Registration of multiple User IDs by a single individual
+F. Dissemination of content that disrupt public order or violate common decency.
+G. Causing defamation or harm to others
+
+Article 8. Provision of Services
+Membership is free, and members are eligible for the following services
+1. The foundation provides a unified membership account service that allows the use of the websites www.nmf.or.kr, www.theateryong.or.kr, and www.museumshop.or.kr once a user registers at any of the aforementioned websites. However, services such as reserving tickets for performances are only accessible through www.theateryong.or.kr. Services such as online purchasing of cultural goods are only accessible through www.museumshop.or.kr.
+2. Members may use the forums on the foundation's websites or the limited search function.
+3. The foundation may provide discounts to members for any services provided by the foundation, depending on the financial situation of the foundation. In this case, the foundation must announce the discounts provided to members on the foundation's websites.
+4. The foundation will provide promotional information on performances and events on both a regular and non-regular basis through e-mails and SMS to members that have agreed to receive promotional information.
+
+Article 9. Termination of Services
+If a user is found to have violated the Terms of Service, the foundation's websites may, at its discretion, limit or terminate access to the services. Provision 10. (Change or Cancellation of Services)
+1. The foundation is not responsible for any financial damage incurred by the user through the use of the services in expectance of financial gain or through the use of any information gained from the foundation's websites. The foundation is also not responsible for the information, documents, and the trustworthiness or accuracy of facts that members disseminate through the services.
+2. The foundation's websites are not responsible for any damages to the member that are the result of deliberate actions or fault of the member.
+
+Chapter 3. Responsibilities and Obligations
+
+Article 11. The Obligations of the Foundation
+1. The foundation will provide the Terms of Service, name of the foundation and representative, address (including an address that can process consumer complaints), telephone number, e-mail address, business registration number, mail order business number, privacy officer on the initial page of the foundation's websites. The terms of service may be accessible through a link on the website.
+2. The foundation will not take actions that are illegal or the Terms of Service, or actions that disrupt public order. The foundation will commite to the continued and stable provision of services in accordance to the Terms of Service.
+3. The foundation will immediately process any complaints and grievances expressed by members, should such complaints and grievances be found just.
+
+Article 12 The Duties of Members
+1. Members must adhere to the requirements outlined by the foundation including relevant laws, the Terms of Service, and guidelines.
+2. Upon completion of the registration process for the use of services provided by the website, members have the responsibility to maintain confidentiality on the information provided during the registration process. The member is responsible for any circumstance arising from the use of the members user ID and password.
+3. While using any services, the member must not engage in any of the following:
+A. Malicious use of membership information of other members.
+B. Reproduction for any other purpose besides personal use, dissemination through print media or broadcast media, and dissemination to a third party, or information obtained through services without prior consent from the foundation.
+C. Infringement of foundation copyrights, third party copyrights, and any other rights.
+D. Damaging communications equipment or actions that compromise the security of data.
+E. Actions that can be objectively linked to crime
+F. Any actions that violate relevant laws or the terms of use set out by the foundation
+4. The information required for membership registration must be accurate. Also, members must maintain and update user information in order to ensure that it remains accurate. Members must not enable a third party to use their User ID and password.
+5. Members must not engage in any activity for the purpose of monetary gain without prior consent from the foundation's websites.
+
+Article 13 Posts of Members
+1. The foundation may delete, without warning, any posts made by members if it is determined that any of the following applies:
+A. Libel or defamation of another member or a third party
+B. Violation of common decency or public order
+C. Link to criminal activities
+D. Infringement of copyrights or any other rights or the foundation or a third party
+E. Failure to abide by posting dates as set by foundation
+F. Dissemination of pornographic material or links to pornographic websites on the foundation's websites.
+G. Violation of relevant laws
+2. The responsibility and rights concerning a post lies with the member who has made the post. The foundation may not use the post for profit other than reproduction within the website without consent from the member who has made the post. The limitations do not apply when the post is used for non-profit purposes.
+3. The foundation reserves the right to edit and/or move content posted on the foundation's websites without prior notice.
+4. Members may not use information on the website for commercial purposes, including modifying and selling the information.
+5. The member is solely responsible for any civil and criminal law penalties resulting from copyright infringements resulting from posts they create.
+
+Article 14 Personal Data of Members Juveniles Under age 14
+1. In case of membership registration by a juvenile under the age of 14, the foundation must receive consent from a juvenile’s legal representative. The minimal amount of information necessary to obtain consent from the legal representative may be acquired from the juvenile without aforementioned consent. The foundation may deny membership to juveniles who have not obtained consent from their legal representatitves.
+2. The use and deletion of personal data of juveniles 14 and under requires consent from said juvenile’s legal representative, as in previous clause.
+
+Article 15 Protection and Use of Personal Information
+1. During registration, the foundation collects the minimum amount of personal data necessary to provide membership services.
+2. When collecting personal data that enables the identification of a user, the foundation will obtain consent from the user. (Reading the terms of service and clicking “Agree” will constitute agreement to these terms of service.) The user may refuse the collection and use of his/her personal data. However, in such case the user will be unable to register at the website and access the services of the National Museum Cultural Foundation.
+3. The personal data will not be used or shared with a third party without the consent of the member except in accordance to the law or in the following cases. The user may refuse the collection and use of his/her personal data. However, in such case the user will be unable to register at the website and access the services of the National Museum Cultural Foundation.
+A. Delivery of promotional material, information, event results through e-mail, SMS/LMS/MMS, mail. (Only applicable for members who have agreed to receive promotional information)
+B. Stipulation by law (personal data will not be shared even if an executive branch of government of investigative agency makes a request. Personal data will only be shared upon receival of a warrant or a form by the head of the organization, in accordance to the law)
+C. Provision of information in a form that makes the individual member unidentifiable, for the purposes of statistical analysis, academic research, and market research.
+4. Any changes to the account by the member including termination of membership, access to personal data, and requests to change personal data are effective immediately upon completion of changes.
+5. Personal data is deleted immediately once the purpose of collecting the personal data is achieved. Personal data will stored, however, when it is necessary under commercial law and relevant laws.
+
+Article 16 Management of Personal Information
+Management, deletion, request for access, request for changes, and sharing with third parties of personal data will follow relevant laws and the foundation’s Personal Information Processing Policy.
+
+Chapter 4 Payment
+
+Article 17 Acceptable Payment Methods
+1. Members may use credit cards or wire transfers for payment. Acceptable payment methods may change depending on circumstance.
+2. Credit cards require the input of required information, which requires consent from the member.
+3. Wired transfers must be made to the foundation’s account using the member’s name. The foundation is not responsible for any damages resulting from inaccurate information input during payment, unless the user notifies the foundation.
+
+Article 18 Reservation and Cancellation of Tickets
+1. The reservation, cancellation, and refund of performance tickets at the theater are outlined under “Ticket Reservations” at www.theateryong.or.kr
+2. The purchase, exchange, and refund of products through the online cultural store of the foundation are outlined under “Sales Information” of www.museumshop.or.kr
+
+Chapter 5 Miscellanea
+
+Article 19 Damages and Indemnification
+1. The foundation shall bear responsibility for any damages incurred by a member for which the foundation or an employee of the foundation is at fault. The foundation will remedy the damages in accordance with governing laws and established practices
+2. The foundation shall not bear responsibility for the following:
+A. Inability to provide service as a result of natural disaster or unavoidable circumstance
+B. Inconvenience in service use arising from the actions of the member or another member. The foundation shall regulate, as appropriate, inconveniences that result from the actions of other members.
+C. Loss of expected returns as a result of a member’s inability to use service.
+D. Losses resulting from the deletion of posts that a member has created.
+3. The foundation shall not be responsible for the trustworthiness or accuracy of facts of the information or documents that a member disseminates.
+4. Posts are not inherited by legal heirs upon the death of a member, unless specified by law.
+
+Article 20 Governing Law
+In case of legal action with regards to services, the court that has jurisdiction over the address where the foundation’s office is located shall be
+
+Addendum
+(Enforcement Date) The Terms of Service are effective 10 February 2009.
+
+Addendum
+(Enforcement Date) The Terms of Service are effective 6 February 2014.
+
+Addendum
+(Enforcement Date) The Terms of Service are effective 25 March 2016.
+                    </textarea>
+                    <span class="agreeBox">
+                        <input type="radio" name="agreeBox1" id="agree01">
+                        <label for="agree01">Agree</label>
+                        <input type="radio" name="agreeBox1" id="disagree01">
+                        <label for="disagree01">Disagree</label>
+                    </span>
+                </fieldset>
+                <fieldset>
+                    <label for="personalData">Personal Data Processing Statement (Required)</label>
+                    <textarea id="personalData">
+    Article 1 Aims
+
+    The foundation collects personal data for the purposes outlined below. The personal data will not be used for any other purposes, and prior consent will be obtained from members before any changes in the purpose of collection of personal data.
+
+    A. Personal data shall be collected for the purpose of fulfilling service obligations and transactions including, but not limited to, provision of content services, transactions, payments, delivery of products, delivery of bills, authentication (financial transactions, financial services).
+    B. Personal data is collected for the purposes of membership registration, authentication, personal identification, prevention of unauthorized access and/or use, confirmation of registration, determination of age, confirmation of consent from legal representative for the collection of personal data of youths under age 14, preservation of records for dispute arbitration, resolution of complaints and grievances, and notifications.
+    C. Personal data is collected for the purposes of marketing and promotion, development of new services (products) and targeted services, notifications of events and promotions and opportunities to participate, service provision and promotions based on demographics, assessment of service quality, assessment of website traffic, and statistical analysis of service use by members.
+
+    Article 2 Types of Personal Information
+
+    The types of personal data collected for purposes of membership registration and service provision, and the methods used in collection, are as follows:
+    1. Personal Information File Name: Member (member of foundation’s website)
+    - Personal Information Items:
+    Name, birth date, gender, user ID, password, e-mail, home telephone, home address, cellphone, access logs, login IP, name of legal representative, cellphone of legal representative, e-mail of legal representative, home telephone of legal representative
+    Method of Collection: foundation’s website
+    2. Personal Information File Name: Renter
+    - Personal Information Items:
+    Name, cellphone number, name, e-mail, company, company telephone number, bank account number, transaction history
+    Method of Collection: written form (registration form)
+
+    Article 3 Personal Information Storage
+
+    The personal data shall be deleted immediately once the purpose of its collection is fulfilled. The following types of personal data shall be stored for a set period of time, as detailed below, for the following reasons.
+    1. Personal Information File Name: Member (member of foundation’s website)
+    - Personal Information Items:
+    Name, birth date, gender, user ID, password, e-mail, home telephone, home address, cellphone, access logs, login IP, name of legal representative, cellphone of legal representative, e-mail of legal representative, home telephone of legal representative
+    Grounds for Storage: consent from member
+    Duration of Storage: from registration to cancellation of membership account (In case of the existence of a transaction history or payment history, 5 years from last transaction or payment)
+
+    2. Personal Information File Name: Renter
+    Name, cellphone number, name, e-mail, company, company telephone number, bank account number, transaction history
+    - Grounds for Storage: consent from member
+    - Duration of Storage: 5 years (from last application to rent theater)
+
+    Article 4 Sharing of Personal Information to Third Parties
+
+    The foundation collects and handles the personal data of users in accordance with Article 1 Aims, and shall not share personal data with third parties in a manner that exceeds the scope of the original aims unless prior consent from the member is obtained. Personal data may be shared to third parties in the following cases:
+    1. Consent is obtained from the user.
+    2. Regulations within the law exist to allow sharing of personal information
+    3. In case of an emergency where there is a clear risk of loss of life, physical injury, or financial damage to a member or third party, and consent is unobtainable because the user or the legal representative thereof is unable to express intent, or the address of the user or the legal representative is unknown.
+    4. The personal data is necessary for purposes of statistical analysis and academic research, and the personal data is rendered in such a way as to prevent identification of any individual.
+    5. A privacy protection commission has deliberated and determined that it is impossible to fulfill obligations under the governing law unless personal data is used for purposes other than the original aims or is shared with a third party
+    6. The personal data must be shared with foreign intelligence agencies or international organizations under existing national treaties or international treaties.
+    7. The personal data is necessary for criminal investigation and indictments.
+    8. The personal data is necessary court proceedings.
+    9. The personal data is necessary for sentencing, custody, and probation.
+    The foundation provides personal data to the following types of organizations and individuals and the aims and scope of personal data sharing is as follows:
+    - Recipient of personal data: customer satisfaction research companies
+    - Personal information file name: renter
+    - Shared personal data items: name, telephone, company, company telephone
+    - Aim of sharing personal data: customer satisfaction research conducted by government
+    - Duration of storage of personal data: personal data is deleted once the purpose of sharing information with a third party is fulfilled
+
+    Article 5 Personal Data Subprocessing
+
+    The foundation delegates personal data processing to a subprocessor as follows, for the purpose of facilitating personal data processing.
+    Subprocessor: CultureTech Korea, Inc.
+    Subprocessing Details: ticket reservations at the foundation’s website
+    If subprocessing is required, clear regulations shall be established on the adherence to privacy protection laws, prohibition of sharing information with third parties, and accountability, and the yearly contracts shall be stored both in print and digital form. Any changes in subprocessing activities or subprocessor shall be made public in accordance with the Personal Data Processing Statement.
+
+    Article 6 Rights and Obligations of Data Subject
+
+    The data subject (In the case of children under the age of 14, the legal representative) may exercise the following rights at any time with regards to personal data protection.
+    A. Access to personal data
+    B. Request changes of inaccuracies in personal data
+    C. Delete personal data
+    D. Request a cease to data processing
+
+    The exercise of rights in accordance to Article 1 can be accomplished by completing the form in Addendum 8 and submitting it in print form, e-mail, or fax. The foundation shall execute the request immediately.
+    If a data subject requests a change to or the deletion of an inaccuracy in personal data, the personal data shall not be used or shared until after the change or deletion has happened.
+    A legal representative or a third party entrusted with legal power may exercise the rights outlined in Article 1 on behalf of the data subject. In such case, the data subject must submit a Power of Attorney form in accordance with the form provided in Addendum 11.
+    The data subjects right to request access to personal data and to cease the processing of personal data may be limited under Personal Information Protection Act Article 35 Clause 5 and Article 37 Clause 2
+    A data subject may not request changes or deletion of personal data if the collection of the data is required by governing law.
+    Only the data subject and legal representatives of the data subject may request access to personal data, changes or deletion of personal data, and cease of processing of personal data, and the foundation will verify that the data subject is making the request in person or through a legitimate legal representative.
+    The data subject has the right to refuse the collection and use of personal data, and the sharing of personal data with a third party. However, in such case, the data subject will not be able to register as a member at the National Museum Cultural Foundation website or use any related services.
+
+    Article 7 Deletion of Personal Data
+
+    The foundation will immediately delete personal data upon completion of the purpose set out for the collection of personal data. The process, duration, and method of deletion is as follows:
+    A. Deletion Process
+    When the aim of the collection of personal data input by the user has been achieved, the personal data is moved to a separate database (if in print form, in a separate file) and stored for a set duration in accordance with foundation policy and governing law. The personal data that has been moved to a separate database is not used for any other purpose except in accordance with governing law.
+    B. Deletion Duration
+    If the personal data of a user is stored beyond the set duration, the personal data is deleted within 5 days of the duration. If the personal data is no longer required for processing as a result of the achievement of the aims of personal data collection, the cancellation of services, or cease of business activity, the personal data is deleted within 5 days of the date on which the processing of the personal data becomes unnecessary.
+    C. Deletion Method
+    Personal data stored in print form is destroyed by means of a paper shredder or incineration, and personal data stored in digital form is destroyed by means of technologies that prevent reconstruction of data.
+
+    Article 8 Personal Data Safety Measures
+
+    The foundation shall employ the following measures in accordance the Article 29 of the Personal Information Protection Act for the purpose of ensuring safety of personal data.
+    A. Management Measures
+    Development and execution of internal management plans, periodic employee education etc.
+    B. Technical Measures
+    Management of access rights to personal data processing systems, implementation of access restriction systems, encryption of personally identifiable data, installation of security programs
+    C. Physical Measures
+    Restriction of access to data processing facilities and data storage rooms
+
+    Article 9 Privacy Officer
+
+    For purposes of processing complaints concerning personal data and to ensure protection of personal data, the foundation shall designate a privacy officer. (Personal Information Protection Act Article 31 Clause 1, Designation of Privacy Officers)
+
+    - Privacy Head Officer : Kim, Young-gyun, Management Planning Team (02-2077-2900, young0055@nmf.or.kr)
+    - Privacy Officer : Lee, Min-seok, Management Planning Team(02-2077-2904, mslee@nmf.or.kr)
+
+    Article 10 Changes to Personal Data Processing Policy
+
+    The Personal Data Processing Statement is effective 25 March 2016.
+
+    Article 11 Remedies
+
+    The data subject may request remedies or consultation regarding infringement of privacy from the following organizations:
+    Personal Information Dispute Mediation Committee (Korea Internet & Security Agency)
+    - Function : mediation of personal data disputes, mediation of group disputes (civil law mediation)
+    - Website : privacy.kisa.or.kr
+    - Telephone : 118
+    - Address : (138-950) Korea Internet & Security Agency Personal Information Dispute Mediation Committee, Jungdae-ro 135, Songpa-gu, Seoul
+    Personal Information Infringement Reporting Center (Korea Internet & Security Agency)
+    - Function : accepting reports on personal data infringement, consultation services - website : www.kopico.or.kr
+    - Telephone : 118
+    - Address : (138-950) Korea Internet & Security Agency Personal Information Infringement Reporting Center, Jungdae-ro 135, Songpa-gu, Seoul
+    Cybercrime Investigation Division, Supreme Prosecutor’s Office : 02-3480-3578 (www.spo.go.kr)
+    Cyber Terror Response Center, Police Department : 1566-0112(www.netan.go.kr)
+
+    Infringements of rights as a result of actions or omissions by the foundation in response to requests from data subjects to access personal data, change or delete personal data, or cease processing of personal data may file and administrative appeal at the Central Administrative Appeals Commission Corporation (www.simpan.go.kr) in accordance with governing laws.
+                    </textarea>
+                    <span class="agreeBox">
+                        <input type="radio" name="agreeBox2" id="agree02">
+                        <label for="agree02">Agree</label>
+                        <input type="radio" name="agreeBox2" id="disagree02">
+                        <label for="disagree02">Disagree</label>
+                    </span>                
+                </fieldset>
+                <fieldset>
+                    <label for="collectionData">Consent to Collection of Personal Data (Required)</label>
+                    <textarea id="collectionData">
+    1. Items for Collection and Use
+    Name, birth date, gender, user ID, password, e-mail, home telephone, home address, cellphone, login history, login IP, name of legal representative, telephone of legal representative, e-mail of legal representative, home address of legal representative
+    2. Purpose of Collection and Use
+    Website member (member of foundation’s website)
+    3. Duration of Storage and Use
+    From date of consent to collection and use until termination of account.
+    4. Right to Decline | ※You may refuse to consent to the above terms, but you will be unable to register as a member at the foundation or use any of its services.
+                
+                    </textarea>
+                    <span class="agreeBox">
+                        <input type="radio" name="agreeBox3" id="agree03">
+                        <label for="agree03">Agree</label>
+                        <input type="radio" name="agreeBox3" id="disagree03">
+                        <label for="disagree03">Disagree</label>
+                    </span>                
+                </fieldset>
+                <fieldset>
+                    <label for="optionalData">Optional Collection and Use of Personal Data (Optional)</label>
+                    <textarea id="optionalData">
+    1. Items for Collection and Use
+    Name, birth date, e-mail, cellphone, home telephone, home address, transaction history
+    2. Purpose of Collection and Use
+    Customer satisfaction research, newsletters, advertisement of foundation products, advertisement of events and promotions
+    3. Duration of Storage and Use
+    From date of consent to collection and use until termination of account.
+    ※You may refuse to consent to the above terms, but you will be unable to receive useful information, including promotions of cultural products.
+    4. The National Museum Cultural Foundation may contact the data subject for the purposes of advertisement and marketing after collecting personal data.
+    You reserve the right to refuse to consent to optional collection and use of personal data.                
+                    </textarea>
+                    <span class="agreeBox">
+                        <input type="radio" name="agreeBox4" id="agree04">
+                        <label for="agree04">Agree</label>
+                        <input type="radio" name="agreeBox4" id="disagree04">
+                        <label for="disagree04">Disagree</label>
+                    </span>                
+                </fieldset>
+                <a href="index.html" class="btn_green">Back to Main</a>
+                <input type="submit" value="Next" class="btn_green">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="personalInfo.html">Personal Information Management Policies</a></li>
+                <li><a href="refusal.html">Refusal of Unauthorized Collection of Email Addresses</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div>
+            <address>
+                <a href="tel:+8227492333">02-749-2333</a>
+                <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+            </address>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a></li>
+                <li><a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a></li>
+                <li><a href="https://facebook.com/nationalmuseumfoundation" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/muds_museumgoods/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank">Youtube</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                <img src="images/logo_nmf.png" alt="nmf logo">
+                <img src="images/logo.png" alt="muds logo">
+            </h2>
+        </div>
+    </footer>
+</body>
+</html>

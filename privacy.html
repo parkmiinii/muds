@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDS</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="inquireBox active">
+        <span>Private Inquiry</span>
+        <span><a href="writeInquiry.html">Write &amp; Submit 1:1 Question</a></span>
+        <input type="button" value="close" class="btn_close">
+    </div>
+    <header>
+        <div class="shopPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <h2>categories</h2>
+                <ul>
+                    <li>
+                        <b>stationery</b>
+                        <ol>
+                            <li><a href="list_notebook.html">Notebooks / Planners</a></li>
+                            <li><a href="list_writing.html">Writing utensils</a></li>
+                            <li><a href="list_cards.html">Cards / Postcards</a></li>
+                            <li><a href="list_business.html">Business card holders</a></li>
+                            <li><a href="list_stationery_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Fashion</b>
+                        <ol>
+                            <li><a href="list_handkerchiefs.html">handkerchiefs / Scarves</a></li>
+                            <li><a href="list_bags.html">Bags / Wallets</a></li>
+                            <li><a href="list_accessories.html">Accessories</a></li>
+                            <li><a href="list_umbrellas.html">Umbrellas / Parasols</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Digital / Mobile</b>
+                        <ol>
+                            <li><a href="list_mobile.html">Mobile accessories</a></li>
+                            <li><a href="list_chargers.html">Chargers</a></li>
+                            <li><a href="list_smartToks.html">Smart toks</a></li>
+                            <li><a href="list_digital_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Crafts</b>
+                        <ol>
+                            <li><a href="list_nacre.html">Nacre</a></li>
+                            <li><a href="list_ceramic.html">Ceramic</a></li>
+                            <li><a href="list_metal.html">Metal</a></li>
+                            <li><a href="list_craft_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Interior props</b>
+                        <ol>
+                            <li><a href="list_miniature.html">Miniatures</a></li>
+                            <li><a href="list_incense.html">Incense / Fragrance / Candles</a></li>
+                            <li><a href="list_lamps.html">Lamps / Lights</a></li>
+                            <li><a href="list_art.html">Art prints</a></li>
+                            <li><a href="list_cushions.html">Cushions / Fabrics</a></li>
+                            <li><a href="list_interior_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="list_sale.html">Sale</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="list_new.html">new arrival</a>
+                <a href="list_popular.html">popular</a>
+            </div>
+        </div>
+        <!-- shopPanel fin -->
+
+        <div class="contactPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <a href="announce_list.html">announcement</a>
+                <a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a>
+                <a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div>
+                <address>
+                    <a href="tel:+8227492333">02-749-2333</a>
+                    <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                    <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+                </address>
+                <p>Hours 10:00 AM ~ 4:00 PM / Lunch Break:12:00 PM~1:30 PM<br>Closed Sat, Sun, Public Holidays</p>
+            </div>
+            <div>
+                <a href="https://facebook.com/nationalmuseumfoundation" target="_blank"><img src="images/ico_sns_facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/muds_museumgoods/" target="_blank"><img src="images/ico_sns_instagram.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank"><img src="images/ico_sns_youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <!-- contactPanel fin -->
+
+        <div class="searchPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <form action="list_accessories.html">
+                    <input type="search" placeholder="What are you looking for?">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+        <!-- searchPanel fin -->
+
+        <div class="accPanel">
+            <input type="button" value="close" class="btn_close">
+            <ul>
+                <li><a href="logIn.html">Log in</a></li>
+                <li><a href="trackOrders.html">Track orders</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="inquiry.html">1:1 Inquiry</a></li>
+                <li><a href="withdrawal.html">Withdrawal</a></li>
+            </ul>
+        </div>
+        <!-- accPanel -->
+
+        <div class="cartPanel">
+            <input type="button" value="close" class="btn_close">
+            <div class="cartProd">
+                <form action="checkOut_01.html">
+                    <div>
+                        <h2>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</h2>
+                        <button type="button" data-panel="cartEmpty"><img src="images/ico_del.png" alt="delete"></button>
+                        <img src="images/product/5_interiorProps/6_andMore/13/1.jpg" alt="product image">
+                        <ul>
+                            <li>
+                                <strong>options</strong>
+                                <p>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</p>
+                            </li>
+                            <li>
+                                <strong>quantity</strong>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="quantMinus">
+                                    <input type="number" class="quantNumb" id="quantNumb" value="1" min="1" max="99" step="1">
+                                    <input type="button" value="+" class="quantPlus">
+                                </div>
+                            </li>
+                            <li>
+                                <strong>price</strong>
+                                <span>KRW 30,000</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>total</strong>
+                        <p>KRW <output id="totalPrice">30000</output></p>
+                        <input type="submit" value="check out" class="btn_green">
+                    </div>
+                </form>
+            </div>
+            <div class="cartEmpty">
+                <h2>your cart is empty</h2>
+                <span><a href="list_notebook.html">shop now</a></span>
+            </div>
+        </div>
+        <!-- cartPanel fin -->
+        
+        <nav>
+            <ol>
+                <li>
+                    <button type="button" data-panel="shopPanel">
+                        <bdi>一.</bdi>
+                        <i>shop</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="contactPanel">
+                        <bdi>二.</bdi>
+                        <i>contact</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="searchPanel">
+                        <bdi>三.</bdi>
+                        <i>search</i>
+                    </button>
+                </li>
+            </ol>
+            <h1><a href="index.html"><img src="images/logo.png" alt="MUDS"></a></h1>
+            <ol>
+                <li>
+                    <button type="button" data-panel="accPanel">
+                        <bdi>四.</bdi>
+                        <i>account</i>
+                    </button>
+                    
+                </li>
+                <li>
+                    <button type="button" data-panel="cartPanel">
+                        <bdi>五.</bdi>
+                        <i>cart</i>
+                        <span>+99</span>
+                    </button>
+                </li>
+                <li><a href="https://www.museumshop.or.kr/kor/main.do" target="_blank">ko</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="privacyContainer">
+        <h2>privacy policy</h2>
+        <ol>
+            <li><a href="#article1">Article 1 (Purpose)</a></li>
+            <li><a href="#article2">Article 2 (Definition)</a></li>
+            <li><a href="#article3">Article 3 (Specification, explanation and revision of agreement to terms and conditions)</a></li>
+            <li><a href="#article4">Article 4 (Provision and change of services)</a></li>
+            <li><a href="#article5">Article 5 (Service interruption)</a></li>
+            <li><a href="#article6">Article 6 (Membership Registration)</a></li>
+            <li><a href="#article7">Article 7 (Withdrawal of membership, loss of qualification, etc.)</a></li>
+            <li><a href="#article8">Article 8 (Notification to members)</a></li>
+            <li><a href="#article9">Article 9 (Purchase Application)</a></li>
+            <li><a href="#article10">Article 10 (Establishment of contract)</a></li>
+            <li><a href="#article11">Article 11 (Payment business)</a></li>
+            <li><a href="#article12">Article 12 (Receipt confirmation notification, purchase request change and cancellation)</a></li>
+            <li><a href="#article13">Article 13 (Supply of goods, etc.)</a></li>
+            <li><a href="#article14">Article 14 (Refund)</a></li>
+            <li><a href="#article15">Article 15 (Withdrawal of subscription, etc.)</a></li>
+            <li><a href="#article16">Article 16 (Effect of cancellation of subscription, etc.)</a></li>
+            <li><a href="#article17">Article 17 (Personal Information Protection)</a></li>
+            <li><a href="#article18">Article 18 (Obligations of “Shopping Mall”)</a></li>
+            <li><a href="#article19">Article 19 (Obligations regarding member ID and password)</a></li>
+            <li><a href="#article20">Article 20 (User Obligations)</a></li>
+            <li><a href="#article21">Article 21 (Attribution of copyright and restrictions on use)</a></li>
+            <li><a href="#article22">Article 22 (Dispute Resolution)</a></li>
+            <li><a href="#article23">Article 23 (Jurisdiction and Governing Law)</a></li>
+        </ol>
+        <a href="#" class="btn_top"><img src="images/ico_top.png" alt="top"></a>
+        <div id="article1">
+            <h3>Article 1 (Purpose)</h3>
+            <p>These terms and conditions govern the rights and obligations of the cyber mall and users in using the Internet-related services (hereinafter referred to as “services”) provided by the ‘Online Museum Shop’ (hereinafter referred to as “shopping mall”) operated by the National Museum Cultural Foundation. The purpose is to define responsibilities.</p>
+        </div>
+        <div id="article2">
+            <h3>Article 2 (Definition)</h3>
+            <p>Shopping mall-related words defined by the foundation are as follows.</p>
+            <ol>
+                <li>“Shopping mall” refers to a virtual place of business set up by the National Museum Cultural Foundation to provide goods or services (hereinafter referred to as “goods, etc.”) to users through the use of computers and other information and communication facilities to trade goods, etc.</li>
+                <li>“User” refers to members and non-members who access the “Shopping Mall” and receive services provided by the “Shopping Mall” in accordance with these Terms and Conditions.</li>
+                <li>‘Member’ refers to a person who has registered as a member by providing personal information to the “shopping mall,” continuously receives information from the “shopping mall,” and can continuously use the services provided by the “shopping mall.”.</li>
+                <li>‘Non-member’ refers to a person who uses the services provided by the “shopping mall” without registering as a member.</li>
+            </ol>
+        </div>
+        <div id="article3">
+            <h3>Article 3 (Specification, explanation and revision of agreement to terms and conditions)</h3>
+            <ol>
+                <li>The “shopping mall” provides the contents of the terms and conditions, company name and representative name, business location address (including the address of the place where consumer complaints can be handled), phone number, facsimile number, e-mail address, business registration number, and mail order business. The report number, personal information manager, etc. are posted on the initial service screen (front) of the National Museum of Korea Museum Shop so that users can easily see them. However, the contents of the terms and conditions can be viewed by users through the connection screen.</li>
+                <li>“Before the user agrees to the Terms and Conditions, the shopping mall provides a separate connection screen or pop-up screen to ensure that the user can understand important contents such as cancellation of subscription, delivery responsibility, refund conditions, etc. among the contents stipulated in the Terms and Conditions. must be obtained.</li>
+                <li>“Shopping mall” does not violate related laws such as the Act on Consumer Protection in Electronic Commerce, etc., the Act on Regulation of Terms and Conditions, the Framework Act on Electronic Commerce, the Electronic Signature Act, the Act on Promotion of Information and Communications Network Utilization, the Act on Door-to-Door Sales, etc., and the Consumer Protection Act. These terms and conditions may be revised to the extent not permitted.</li>
+                <li>If the “Shopping Mall” revises the terms and conditions, the revised terms and conditions will only apply to contracts concluded after the date of application, and the terms and conditions before revision will remain applicable to contracts already concluded before that date.</li>
+                <li>Matters not stipulated in these Terms and Conditions and the interpretation of these Terms and Conditions shall be governed by the Act on Consumer Protection in Electronic Commerce, etc., the Act on Regulation of Terms and Conditions, etc., the Consumer Protection Guidelines in Electronic Commerce, etc. prescribed by the Fair Trade Commission, and related laws and regulations or commercial practices. Follow.</li>
+            </ol>
+        </div>
+        <div id="article4">
+            <h3>Article 4 (Provision and change of services)</h3>
+            <ol>
+                <li>
+                    <p>“Shopping Mall” performs the following tasks.</p>
+                    <ol>
+                        <li>Provision of information on goods or services and conclusion of purchase contract</li>
+                        <li>Delivery of goods or services for which a purchase contract has been concluded</li>
+                        <li>Other tasks determined by the “shopping mall”</li>
+                    </ol>
+                </li>
+                <li>“Shopping Mall” may change the details of goods or services to be provided under future contracts in the event that goods or services are sold out or technical specifications are changed. In this case, the contents of the changed goods or services and the date of provision are specified and the contents of the current goods or services are immediately announced where they are posted.</li>
+                <li>If the contents of the service contracted with the user to be provided by the “shopping mall” are changed due to reasons such as out of stock of goods or changes in technical specifications, the reason will be immediately notified to the user at an address that can be notified.</li>
+                <li>In the case of the preceding paragraph, the “Shopping Mall” will compensate for the damages incurred by the user. However, this does not apply if the “Shopping Mall” proves that there was no intention or negligence.</li>
+            </ol>
+        </div>
+        <div id="article5">
+            <h3>Article 5 (Service interruption)</h3>
+            <ol>
+                <li>The “Shopping Mall” may temporarily suspend the provision of services in the event of maintenance, inspection, replacement or breakdown of information and communication equipment such as computers, or interruption of communication.</li>
+                <li>“Shopping Mall” compensates for damages suffered by users or third parties due to temporary suspension of service provision for the reasons set forth in Paragraph 1. However, this does not apply if the “Shopping Mall” proves that there was no intention or negligence.</li>
+                <li>In the event that the service cannot be provided due to reasons such as conversion of business type, abandonment of business, integration between companies, etc., the “shopping mall” will notify the user in the manner stipolated in Article 8 and provide consumer services in accordance with the conditions originally presented by the “shopping mall”. compensate for.</li>
+            </ol>
+        </div>
+        <div id="article6">
+            <h3>Article 6 (Membership Registration)</h3>
+            <ol>
+                <li>
+                    The service agreement is established when the applicant completes the subscription by recording the required information in the registration form provided by the “shopping mall."
+                </li>
+                <li>
+                    <p>The “shopping mall” operated by the Foundation may refuse or cancel subscription for use contracts that fall under any of the following items.</p>
+                    <ol>
+                        <li>If you did not apply under your real nameme. </li>
+                        <li>When the contents of the service agreement application form are falsely entered or submittedall. </li>
+                        <li>When you interfere with someone else's use of a shopping mall service operated by the foundation or steal their information.</li>
+                        <li>If you use the “shopping mall” operated by the foundation to engage in an act prohibited by the law or these terms and conditions.mind. </li>
+                        <li>When the application requirements set by the “shopping mall” operated by the foundation are not met."</li>
+                    </ol>
+                </li>
+                <li>
+                    The membership contract is established when the approval of the “shopping mall” reaches the member.
+                </li>
+            </ol>
+        </div>
+        <div id="article7">
+            <h3>Article 7 (Withdrawal of membership, loss of qualification, etc.)</h3>
+            <ol>
+                <li>
+                    Members may request withdrawal from the “Shopping Mall” at any time, and the “Shopping Mall” will process the withdrawal immediately.
+                </li>
+                <li>
+                    When a member withdraws from the membership, the Foundation immediately deletes the member's personal information, and once deleted, the member cannot request restoration.
+                </li>
+                <li>
+                    If a member falls under any of the following reasons, the Foundation may restrict or suspend membership.		
+                    <ol>
+                        <li>If false information is registered when applying for registrationme. </li>
+                        <li>In cases involving criminal activityall. </li>
+                        <li>If you have stolen someone else's ID and passwordla.</li>
+                        <li>In case of intentional interference with service operationmind.</li>
+                        <li>When the same user double-registers with a different IDbar. </li>
+                        <li>In case of disseminating content that is detrimental to public order and moralsbuy. </li>
+                        <li>When damaging another person's reputation or causing a disadvantage"	</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <div id="article8">
+            <h3>Article 8 (Notification to members)</h3>
+            <ol>
+                <li>
+                    When the “shopping mall” notifies the member, it can be done to the e-mail address designated by the member in advance by agreement with the “shopping mall.”
+                </li>
+                <li>
+                    In the case of notification to an unspecified number of members, the “Shopping Mall” may substitute individual notification by posting the notice on the “Shopping Mall” bulletin board for more than one week.
+                </li>
+            </ol>
+            <p>However, individual notification will be provided for matters that have a significant impact on the member's transactions.</p>
+        </div>
+        <div id="article9">
+            <h3>Article 9 (Purchase Application)</h3>
+            <p>Users of the “shopping mall” apply for purchases on the “shopping mall” using the following or similar methods, and the “shopping mall” must provide the following information in an easy-to-understand manner when users apply for purchases. However, if you are a member, you may exclude the application of items 2 to 4.</p>
+            <ol>
+                <li>Search and selection of goods, etc.</li>
+                <li>Enter your name, address, phone number, e-mail address (or mobile phone number), etc.</li>
+                <li>Confirmation of the contents of the terms and conditions, services for which the right to withdraw subscription is restricted, and the burden of costs such as delivery fees and installation fees.</li>
+                <li>Agree to these terms and conditions and confirm or reject the items in item 3 above (e.g., mouse click)</li>
+                <li>Application for purchase of goods, etc. and confirmation thereof or consent to confirmation by the “shopping mall”</li>
+                <li>Selection of payment method"</li>
+            </ol>
+        </div>
+        <div id="article10">
+            <h3>Article 10 (Establishment of contract)</h3>
+            <ol>
+                <li>
+                    The “Shopping Mall” may not accept a purchase request as stated in Article 9 if any of the following applies. However, when concluding a contract with a minor, it must be notified that the minor or the legal representative may cancel the contract if the consent of the legal representative is not obtained.
+                    <ol>
+                        <li>If there are false information, omissions, or errors in the application details. </li>
+                        <li>When a minor purchases goods or services prohibited by the Youth Protection Act, such as cigarettes or alcohol.</li>
+                        <li>If it is judged that approving other purchase requests would significantly impede the “shopping mall” technology."</li>
+                    </ol>
+                </li>
+                <li>
+                    The contract is deemed to have been established when the “Shopping Mall’s” approval reaches the user in the form of a receipt confirmation notice under Article 12, Paragraph 1.
+                </li>
+                <li>
+                    The “shopping mall’s” expression of approval must include confirmation of the user’s purchase request, whether the price is available, and information on correction or cancellation of the purchase request.
+                    <ol>
+                        <li>Search and selection of goods, etc.</li>
+                        <li>Enter your name, address, phone number, e-mail address (or mobile phone number), etc.</li>
+                        <li>Confirmation of the contents of the terms and conditions, services for which the right to withdraw subscription is restricted, and the burden of costs such as delivery fees and installation fees.</li>
+                        <li>Agree to these terms and conditions and confirm or reject the items in item 3 above (e.g., mouse click)</li>
+                        <li>Application for purchase of goods, etc. and confirmation thereof or consent to confirmation by the “shopping mall”</li>
+                        <li>Selection of payment method"</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <div id="article11">
+            <h3>Article 11 (Payment business)</h3>
+            <p>Payment for goods or services purchased at the “Shopping Mall” can be made using any of the following methods. However, the “shopping mall” cannot collect any nominal fees in addition to the price of goods, etc. in relation to the user’s payment method.</p>
+            <ol>
+                <li>Various account transfers such as phone banking, internet banking, and email banking</li>
+                <li>Payment by various cards such as prepaid cards, debit cards, credit cards, etc.</li>
+                <li>Online Transfer without bank account</li>
+                <li>Payment by other electronic payment methods, etc."</li>
+            </ol>
+        </div>
+        <div id="article12">
+            <h3>Article 12 (Receipt confirmation notification, purchase request change and cancellation)</h3>
+            <ol>
+                <li>
+                    If there is a discrepancy in the expression of intent, the user who has received the recipient notification may change or request cancellation of the purchase request immediately after receiving the receipt confirmation notice, and if there is a request from the user before delivery, the “Shopping Mall” will respond to the request without delay. It must be processed accordingly. However, if the payment has already been made, the provisions regarding cancellation of subscription, etc. in Article 15 shall apply.
+                </li>
+                <li>
+                    If there is a discrepancy in the expression of intent, the user who has received the receipt confirmation notice can change or cancel the purchase request immediately after receiving the receipt confirmation notice, and if there is a request from the user before delivery, the “shopping mall” will respond to the request without delay. It must be processed accordingly. However, if the payment has already been made, the provisions regarding cancellation of subscription, etc. in Article 15 shall apply.
+                </li>
+            </ol>
+        </div>
+        <div id="article13">
+            <h3>Article 13 (Supply of goods, etc.)</h3>
+            <ol>
+                <li>
+                    Unless there is a separate agreement with the user regarding the timing of supply of goods, etc., the “shopping mall” takes customization, packaging, and other necessary measures to ensure that goods are delivered within 7 days from the date of subscription by the user. . However, if the “Shopping Mall” has already received all or part of the payment for goods, etc., action will be taken within 2 business days from the date of receiving all or part of the payment. At this time, the “shopping mall” takes appropriate measures so that users can check the supply procedure and progress of goods, etc.
+                </li>
+                <li>
+                    The “shopping mall” specifies the delivery method, the person responsible for shipping fees by means, and the delivery period by means for the goods purchased by the user. If the “shopping mall” exceeds the agreed delivery period, it must compensate the user for any resulting damages. However, this does not apply if the “shopping mall” proves that there was no intention or negligence.
+                </li>
+            </ol>
+        </div>
+        <div id="article14">
+            <h3>Article 14 (Refund)</h3>
+            <p>If the “shopping mall” cannot deliver or provide the goods that the user has applied for purchase due to reasons such as out of stock, the “shopping mall” will notify the user of the reason without delay and, if payment for the goods, etc. has been received in advance, within 2 days from the date of receiving the payment. We will refund you or take the necessary steps to obtain a refund within business days.</p>
+        </div>
+        <div id="article15">
+            <h3>Article 15 (Withdrawal of subscription, etc.)</h3>
+            <ol>
+                <li>
+                    Users who have entered into a contract with the “Shopping Mall” for the purchase of goods, etc. may withdraw their subscription within 7 days from the date of receiving the confirmation of receipt.
+                </li>
+                <li>
+                    When a user receives goods, etc., they cannot be returned or exchanged in any of the following cases.
+                    <ol>
+                        <li>If goods, etc. are lost or damaged due to reasons attributable to the user.(However, if the packaging, etc. is damaged in order to check the contents of the goods, etc., the subscription may be canceled.)</li>
+                        <li>When the value of goods, etc. has decreased significantly due to use or partial consumption by the user.</li>
+                        <li>When the value of goods, etc. has decreased significantly over time to the extent that it is difficult to re-price them.</li>
+                        <li>If the packaging of the original goods, etc. is damaged if duplication is possible with goods with the same performance."</li>
+                    </ol>
+                </li>
+                <li>
+                    In the case of subparagraphs 2 to 4 of Paragraph 2, if the “shopping mall” has not taken measures such as specifying in advance the fact that cancellation of subscription is restricted in a place where consumers can easily see or providing trial products, the user’s subscription may be withdrawn. etc. are not limited.
+                </li>
+                <li>
+                    Notwithstanding the provisions of paragraphs 1 and 2, if the contents of the goods, etc. are different from the contents of the display or advertisement or are implemented differently from the contents of the contract, the user shall be informed of the fact within 3 months from the date of supply of the goods, etc. Alternatively, you may cancel your subscription within 30 days from the date you became aware of it.
+                </li>
+            </ol>
+        </div>
+        <div id="article16">
+            <h3>Article 16 (Effect of cancellation of subscription, etc.)</h3>
+            <ol>
+                <li>
+                    When the “Shopping Mall” receives goods, etc. from the user, it will refund the amount already paid for the goods, etc. within 3 business days. In this case, when the “shopping mall” delays the refund of goods, etc. to the user, the delay interest calculated by multiplying the delay period by the delay interest rate determined and announced by the Fair Trade Commission is paid.
+                </li>
+                <li>
+                    In refunding the above amount, if the user has paid for the goods, etc. using a payment method such as a credit card or electronic money, the “Shopping Mall” shall immediately suspend the claim for the price of the goods, etc. by having the business operator who provided the payment method concerned. Or ask to cancel.
+                </li>
+                <li>
+                    In case of cancellation of subscription, etc., the cost necessary to return the supplied goods, etc. shall be borne by the user. “Shopping mall” does not charge users with a penalty or compensation for damages due to cancellation of subscription, etc. However, if the contents of the goods, etc. are different from the contents of the display or advertisement, or the contract is implemented differently and the contract is canceled, the costs necessary to return the goods, etc. will be borne by the “shopping mall.”
+                </li>
+                <li>
+                    If the user pays shipping costs when receiving goods, etc., the “shopping mall” clearly indicates who will bear the costs when canceling the subscription so that the user can easily understand.
+                </li>
+            </ol>
+        </div>
+        <div id="article17">
+            <h3>Article 17 (Personal Information Protection)</h3>
+            <ol>
+                <li>
+                    <p>When collecting user information, the “shopping mall” collects the minimum amount of information necessary to fulfill the purchase contract. The following items are required and the other items are optional.</p>
+                    <ol>
+                        <li>Name</li>
+                        <li>Address</li>
+                        <li>Telephone number</li>
+                        <li>Desired ID (for members)</li>
+                        <li>Password (for members)</li>
+                        <li>Email address (or mobile phone number)"</li>
+                    </ol>
+                </li>
+                <li>
+                    When the “shopping mall” collects personally identifiable information of a user, the consent of the user must be obtained.
+                </li>
+                <li>
+                    The provided personal information cannot be used for purposes other than purposes or provided to a third party without the consent of the user, and the shopping mall assumes all responsibility for this. However, with the exception of the following cases.
+                    <ol>
+                        <li>When providing the minimum user information (name, address, phone number) required for delivery to the delivery company for delivery purposes.</li>
+                        <li>When it is necessary for statistical compilation, academic research, or market research and is provided in a form that does not identify specific individuals</li>
+                        <li>When necessary for payment settlement according to transactions of goods, etc.</li>
+                        <li>When identity verification is necessary to prevent theft5. When there are unavoidable reasons required by law or the law."</li>
+                    </ol>
+                </li>
+                <li>
+                    In cases where the “shopping mall” must obtain user consent pursuant to paragraphs 2 and 3, the identity of the person in charge of personal information management (affiliation, name and phone number, other contact information), purpose of collection and use of information, third party Matters stipulated in Article 22 (2) of the Act on Promotion of Information and Communications Network Utilization, etc., such as matters related to the provision of information (recipient of information, purpose of provision, and contents of information to be provided), must be specified or notified in advance, and users may give this consent at any time. You can withdraw.
+                </li>
+                <li>
+                    Users may request to view and correct errors in their personal information held by the “Shopping Mall” at any time, and the “Shopping Mall” has the obligation to take necessary measures without delay. If a user requests correction of an error, the “Shopping Mall” will not use the personal information until the error is corrected.
+                </li>
+                <li>
+                    In order to protect personal information, the “shopping mall” limits the number of administrators and minimizes the number, and assumes all responsibility for damages to users resulting from loss, theft, leakage, alteration, etc. of users’ personal information, including credit cards, bank accounts, etc. I lose.
+                </li>
+                <li>
+                    “Shopping Mall” or a third party who has received personal information from it will destroy the personal information without delay when the purpose of collection or provision of the personal information has been achieved.
+                </li>
+            </ol>
+        </div>
+        <div id="article18">
+            <h3>Article 18 (Obligations of “Shopping Mall”)</h3>
+            <ol>
+                <li>
+                    “Shopping Mall” shall not engage in any acts prohibited by the law or these Terms and Conditions or against public order and morals, and shall do its best to provide goods and services on a continuous and stable basis in accordance with the provisions of these Terms and Conditions.
+                </li>
+                <li>
+                    “Shopping mall” must have a security system to protect users’ personal information (including credit information) so that users can use Internet services safely.
+                </li>
+                <li>
+                    If a “shopping mall” incurs damages to a user due to unfair labeling or advertising practices prescribed in Article 3 of the Act on Fair Labeling and Advertising regarding products or services, the “shopping mall” shall be responsible for compensating the damages.
+                </li>
+                <li>
+                    “Shopping Mall” does not send commercial advertising emails that users do not want.
+                </li>
+            </ol>
+        </div>
+        <div id="article19">
+            <h3>Article 19 (Obligations regarding member ID and password)</h3>
+            <ol>
+                <li>
+                    Except in the case of Article 17, members are responsible for managing their ID and password.
+                </li>
+                <li>
+                    Members must not allow third parties to use their ID and password.
+                </li>
+                <li>
+                    If a member becomes aware that their ID and password have been stolen or are being used by a third party, they must immediately notify the “Shopping Mall” and follow any instructions provided by the “Shopping Mall.”
+                </li>
+            </ol>
+        </div>
+        <div id="article20">
+            <h3>Article 20 (User Obligations)</h3>
+            <p>The user should not conduct the following.</p>	
+            <ol>
+                <li>Registration of false information when applying or changing</li>
+                <li>Stealing other people’s information</li>
+                <li>Changes to information posted on “Shopping Mall”</li>
+                <li>Transmission or posting of information (computer programs, etc.) other than that specified by the “Shopping Mall”</li>
+                <li>Infringement of intellectual property rights, such as copyrights, of the “shopping mall” or other third parties.</li>
+                <li>Any act that damages the reputation of the “shopping mall” or other third parties or interferes with their business.</li>
+                <li>Disclosing or posting obscene or violent messages, videos, voices, or other information that is against public order and morals on the shopping mall."</li>
+            </ol>
+        </div>
+        <div id="article21">
+            <h3>Article 21 (Attribution of copyright and restrictions on use)</h3>
+            <ol>
+                <li>
+                    Copyright and other intellectual property rights for works created by the “Shopping Mall” belong to the “Shopping Mall.”
+                </li>
+                <li>
+                    Users may use information for which intellectual property rights belong to the “Shopping Mall” among the information obtained by using the “Shopping Mall” for profit-making purposes by copying, transmitting, publishing, distributing, broadcasting or other methods without the prior consent of the “Shopping Mall” or third parties. You must not allow others to use it.
+                </li>
+                <li>
+                    If the “shopping mall” uses the copyright belonging to the user in accordance with the agreement, it must notify the user.
+                </li>
+            </ol>
+        </div>
+        <div id="article22">
+            <h3>Article 22 (Dispute Resolution)</h3>
+            <ol>
+                <li>
+                    “Shopping Mall” establishes and operates a damage compensation processing organization to reflect legitimate opinions or complaints raised by users and to compensate for the damage.
+                </li>
+                <li>
+                    The “Shopping Mall” gives priority to complaints and opinions submitted by users. However, if prompt processing is difficult, the user will be notified immediately of the reason and processing schedule.
+                </li>
+                <li>
+                    In the event that a user applies for damage relief in connection with an e-commerce dispute that arises between the “shopping mall” and the user, the dispute may be subject to mediation by the Fair Trade Commission or a dispute mediation agency requested by the city/provincial governor.
+                </li>
+            </ol>
+        </div>
+        <div id="article23">
+            <h3>Article 23 (Jurisdiction and Governing Law)</h3>
+            <ol>
+                <li>
+                    Litigation regarding e-commerce disputes that arise between the “Shopping Mall” and users will be determined by the user’s address at the time of filing the lawsuit. If there is no address, the lawsuit will be under the exclusive jurisdiction of the district court that has jurisdiction over the user’s place of residence. However, if the user's address or residence at the time of filing is unclear or if the user resides abroad, the lawsuit will be filed in the competent court under the Civil Procedure Act.
+                </li>
+                <li>
+                    Korean law applies to e-commerce lawsuits filed between the “Shopping Mall” and users.
+                </li>
+            </ol>
+        </div>
+        <button type="button" class="btn_green btn_back">Back</button>
+    </div>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="personalInfo.html">Personal Information Management Policies</a></li>
+                <li><a href="refusal.html">Refusal of Unauthorized Collection of Email Addresses</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div>
+            <address>
+                <a href="tel:+8227492333">02-749-2333</a>
+                <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+            </address>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a></li>
+                <li><a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a></li>
+                <li><a href="https://facebook.com/nationalmuseumfoundation" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/muds_museumgoods/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank">Youtube</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                <img src="images/logo_nmf.png" alt="nmf logo">
+                <img src="images/logo.png" alt="muds logo">
+            </h2>
+        </div>
+    </footer>
+</body>
+</html>

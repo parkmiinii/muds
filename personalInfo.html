@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDS</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="inquireBox active">
+        <span>Private Inquiry</span>
+        <span><a href="writeInquiry.html">Write &amp; Submit 1:1 Question</a></span>
+        <input type="button" value="close" class="btn_close">
+    </div>
+    <header>
+        <div class="shopPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <h2>categories</h2>
+                <ul>
+                    <li>
+                        <b>stationery</b>
+                        <ol>
+                            <li><a href="list_notebook.html">Notebooks / Planners</a></li>
+                            <li><a href="list_writing.html">Writing utensils</a></li>
+                            <li><a href="list_cards.html">Cards / Postcards</a></li>
+                            <li><a href="list_business.html">Business card holders</a></li>
+                            <li><a href="list_stationery_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Fashion</b>
+                        <ol>
+                            <li><a href="list_handkerchiefs.html">handkerchiefs / Scarves</a></li>
+                            <li><a href="list_bags.html">Bags / Wallets</a></li>
+                            <li><a href="list_accessories.html">Accessories</a></li>
+                            <li><a href="list_umbrellas.html">Umbrellas / Parasols</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Digital / Mobile</b>
+                        <ol>
+                            <li><a href="list_mobile.html">Mobile accessories</a></li>
+                            <li><a href="list_chargers.html">Chargers</a></li>
+                            <li><a href="list_smartToks.html">Smart toks</a></li>
+                            <li><a href="list_digital_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Crafts</b>
+                        <ol>
+                            <li><a href="list_nacre.html">Nacre</a></li>
+                            <li><a href="list_ceramic.html">Ceramic</a></li>
+                            <li><a href="list_metal.html">Metal</a></li>
+                            <li><a href="list_craft_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Interior props</b>
+                        <ol>
+                            <li><a href="list_miniature.html">Miniatures</a></li>
+                            <li><a href="list_incense.html">Incense / Fragrance / Candles</a></li>
+                            <li><a href="list_lamps.html">Lamps / Lights</a></li>
+                            <li><a href="list_art.html">Art prints</a></li>
+                            <li><a href="list_cushions.html">Cushions / Fabrics</a></li>
+                            <li><a href="list_interior_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="list_sale.html">Sale</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="list_new.html">new arrival</a>
+                <a href="list_popular.html">popular</a>
+            </div>
+        </div>
+        <!-- shopPanel fin -->
+
+        <div class="contactPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <a href="announce_list.html">announcement</a>
+                <a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a>
+                <a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div>
+                <address>
+                    <a href="tel:+8227492333">02-749-2333</a>
+                    <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                    <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+                </address>
+                <p>Hours 10:00 AM ~ 4:00 PM / Lunch Break:12:00 PM~1:30 PM<br>Closed Sat, Sun, Public Holidays</p>
+            </div>
+            <div>
+                <a href="https://facebook.com/nationalmuseumfoundation" target="_blank"><img src="images/ico_sns_facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/muds_museumgoods/" target="_blank"><img src="images/ico_sns_instagram.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank"><img src="images/ico_sns_youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <!-- contactPanel fin -->
+
+        <div class="searchPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <form action="list_accessories.html">
+                    <input type="search" placeholder="What are you looking for?">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+        <!-- searchPanel fin -->
+
+        <div class="accPanel">
+            <input type="button" value="close" class="btn_close">
+            <ul>
+                <li><a href="logIn.html">Log in</a></li>
+                <li><a href="trackOrders.html">Track orders</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="inquiry.html">1:1 Inquiry</a></li>
+                <li><a href="withdrawal.html">Withdrawal</a></li>
+            </ul>
+        </div>
+        <!-- accPanel -->
+
+        <div class="cartPanel">
+            <input type="button" value="close" class="btn_close">
+            <div class="cartProd">
+                <form action="checkOut_01.html">
+                    <div>
+                        <h2>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</h2>
+                        <button type="button" data-panel="cartEmpty"><img src="images/ico_del.png" alt="delete"></button>
+                        <img src="images/product/5_interiorProps/6_andMore/13/1.jpg" alt="product image">
+                        <ul>
+                            <li>
+                                <strong>options</strong>
+                                <p>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</p>
+                            </li>
+                            <li>
+                                <strong>quantity</strong>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="quantMinus">
+                                    <input type="number" class="quantNumb" id="quantNumb" value="1" min="1" max="99" step="1">
+                                    <input type="button" value="+" class="quantPlus">
+                                </div>
+                            </li>
+                            <li>
+                                <strong>price</strong>
+                                <span>KRW 30,000</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>total</strong>
+                        <p>KRW <output id="totalPrice">30000</output></p>
+                        <input type="submit" value="check out" class="btn_green">
+                    </div>
+                </form>
+            </div>
+            <div class="cartEmpty">
+                <h2>your cart is empty</h2>
+                <span><a href="list_notebook.html">shop now</a></span>
+            </div>
+        </div>
+        <!-- cartPanel fin -->
+        
+        <nav>
+            <ol>
+                <li>
+                    <button type="button" data-panel="shopPanel">
+                        <bdi>一.</bdi>
+                        <i>shop</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="contactPanel">
+                        <bdi>二.</bdi>
+                        <i>contact</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="searchPanel">
+                        <bdi>三.</bdi>
+                        <i>search</i>
+                    </button>
+                </li>
+            </ol>
+            <h1><a href="index.html"><img src="images/logo.png" alt="MUDS"></a></h1>
+            <ol>
+                <li>
+                    <button type="button" data-panel="accPanel">
+                        <bdi>四.</bdi>
+                        <i>account</i>
+                    </button>
+                    
+                </li>
+                <li>
+                    <button type="button" data-panel="cartPanel">
+                        <bdi>五.</bdi>
+                        <i>cart</i>
+                        <span>+99</span>
+                    </button>
+                </li>
+                <li><a href="https://www.museumshop.or.kr/kor/main.do" target="_blank">ko</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="personalInfoContainer">
+        <h2>personal information management policy</h2>
+        <ol>
+            <li><a href="#article1">Article 1. Purposes of Personal Information Management</a></li>
+            <li><a href="#article2">Article 2. Items of Personal Information to Be Collected</a></li>
+            <li><a href="#article3">Article 3. Period for Personal Information to be Held and Used</a></li>
+            <li><a href="#article4">Article 4. Provision of Personal Information to a Third Party</a></li>
+            <li><a href="#article5">Article 5. Personal Information Entrustment of Affairs</a></li>
+            <li><a href="#article6">Article 6. the Rights and Duties of a Subject of Information, and How to Exercise them</a></li>
+            <li><a href="#article7">Article 7 Destruction of Personal Information</a></li>
+            <li><a href="#article8">Article 8. Information Safety Measures</a></li>
+            <li><a href="#article9">Article 9. Personal Information Protection Managers</a></li>
+            <li><a href="#article10">Article 10. Changes in Personal Information Management Policies</a></li>
+            <li><a href="#article11">Article 11. Remedy Procedures of Violation of Rights</a></li>
+        </ol>
+        <a href="#" class="btn_top"><img src="images/ico_top.png" alt="top"></a>
+        <p>
+            The Cultural Foundation of the National Museum of Korea (hereinafter referred to as the “The foundation”) has the following personal information management policies pursuant to personal information protection regulations under Personal Information Protection Act and other relevant legislations, in order to protect users’ personal information and rights and to address any related problems.<br>
+            <br>
+            If the policies are revised, the foundation will inform you of the changes to the execution of personal information via the bulletin board on the website (or via individual notice).
+        </p>
+        <div id="article1">
+            <h3>Article 1. Purposes of Personal Information Management</h3>
+            <p>
+                The foundation manages personal information for the following purposes. Personal information will not be used beyond any stated purposes, and the foundation will seek prior-consent in case the purposes are changed.<br><br>
+                Personal information is managed for the purpose of
+            </p>
+            <ol>
+                <li>the implementation of contract on service provisions and settlement of fees including provision of contents, purchasing and payment, products delivery, sending of receipts, personal certification (finance transactions, finance service)</li>
+                <li>personal identification confirmation related to the joining of membership and use of membership services, prevention of illegal use of inappropriate members and an unauthorized use, confirming user’s willingness to join the website, age certification, confirmation of legal representative for child 14 years and younger, history records for any dispute conciliations, service complaint handling, and announcement of any notices</li>
+                <li>marketing and promotional activities, development of new services(products) and provision of tailored services, offering information on events and promotions, offering service related to demographic features, checking of service validity, checking access frequency, and statistics on service use of members</li>
+            </ol>
+        </div>
+        <div id="article2">
+            <h3>Article 2. Items of Personal Information to Be Collected</h3>
+            <p>For the provision of various services and membership, information items to be collected, and collection methods are as follows:</p>
+            <ol>
+                <li>
+                    <p>File name of personal information : a homepage member(a member of the website operated by the foundation)</p>
+                    <ul>
+                        <li>- Personal information items : 이name, date and year of birth, gender, log-in ID, password, e-mail, contact number, address, cellphone number, log-in history, IP address, name of representative, phone number of representative, email of representative, contact number of representative</li>
+                        <li>- Collection method : the website operated by the foundation</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>File name of personal information : information provider</p>
+                    <ul>
+                        <li>- Personal information items : name, cellphone number, name, e-mail, company, company contact number, bank account number, payment history</li>
+                        <li>- Collection method : paper form(application form)</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div id="article3">
+            <h3>Article 3. Period for Personal Information to be Held and Used</h3>
+            <p>Personal information is destroyed once the purpose of the process is achieved. However, the following information is saved for the below-stated period for the following reasons.</p>
+            <ol>
+                <li>
+                    <p>File name of personal information : a member of the website (website operated by the foundation)</p>
+                    <ul>
+                        <li>- personal information items : name, date and year of birth, gender, log-in ID, password, e-mail, contact number, address, cellphone number, log-in history, IP address, name of legal representative, phone number of legal representative, email of legal representative, contact number of legal representative</li>
+                        <li>- collection condition : a user’s consent</li>
+                        <li>- collection period: from joining to withdrawal from membership (When payments and products transactions exist, information is saved for 5 years since the transaction date.)</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>File Name of personal information : information provider</p>
+                    <ul>
+                        <li>- personal information items : name, cellphone number, name, e-mail, company, company contact number, bank account number, payment history</li>
+                        <li>- collection condition : a consent of user</li>
+                        <li>- collection period : 5 years from the latest provision</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div id="article4">
+            <h3>Article 4. Provision of Personal Information to a Third Party</h3>
+            <p>The foundation manages users’ personal information within the stated scope of Article 1 (purpose of personal information management), and will not manage or provide the information to a third party beyond the scope without a prior-consent of the subject of the information except in the following circumstances:</p>
+            <ol>
+                <li>Where the foundation obtained the consent of a user of information</li>
+                <li>Where there exist special provisions in any Act</li>
+                <li>Where it is deemed obviously necessary for physical safety and property interests of a user of information or a third person when the user of information or his or her legal representative cannot give prior consent because he/she is unable to express his/her intention or by reason of his/her unidentified address, etc.</li>
+                <li>where personal information is necessary for compiling statistics, or scientific research purposes, etc., and the personal information is provided in a form by which a specific individual cannot be identified</li>
+                <li>Where using personal information for any purpose other than the intended purpose or a failure to provide a third person with such information makes it impossible to perform affairs provided for in any other Act, and this has undergone deliberation and resolution by the Protection Committee</li>
+                <li>Where it is necessary for providing a foreign government or international organization with personal information in order to implement a treaty or any other international agreement</li>
+                <li>Where it is necessary for investigating a crime, and instituting and sustaining a public prosecution</li>
+                <li>Where it is necessary for a court to perform its judicial affairs</li>
+                <li>Where it is necessary for executing a punishment, care and custody or protective disposition</li>
+            </ol>
+            <p>
+                The foundation provides personal information to the following organization or individuals for the following purposes.<br>
+                A recipient organization of personal information : customers survey agency<br>
+                Name of personal information file: information provider<br>
+                Personal information items to be provided : name, cellphone number, company name, company phone number<br>
+                Purpose for which personal information is provided : customers satisfaction survey conducted by nation<br>
+                Period for which personal information is held : immediate destroy when the purpose of information provision is achieved
+            </p>
+        </div>
+        <div id="article5">
+            <h3>Article 5. Personal Information Entrustment of Affairs</h3>
+            <p>
+                The foundation entrusts a third party with the management affairs of personal information in order to achieve a smooth handling of affairs.<br>
+                Company commissioned: Culture Tech Korea Inc.<br>
+                Work for commission : theater ticketing via website operated by the foundation<br>
+                When entrustment of information is needed, the foundation will clearly state the compliance of relevant personal information protection Act, prohibition and responsibility of provision of personal information to a third party, and store a contract in paper and online.<br>
+                When any change is made in the work affairs and assignee, the changes must be disclosed immediately under the personal information regulations.
+            </p>
+        </div>
+        <div id="article6">
+            <h3>Article 6. the Rights and Duties of a Subject of Information, and How to Exercise them</h3>
+            <p>A subject of information (legal deputy for 14 years and younger) can exercise the right to the following personal information protection.</p>
+            <ol>
+                <li>a request to inspect personal information</li>
+                <li>a request to revise information if there is errors</li>
+                <li>a request to destroy information</li>
+                <li>a request to suspense the use of personal information</li>
+            </ol>
+            <p>
+                The right stated under the Article 1 can be exercised through various ways of paper, emails, and fax under the attachment form 8 of the Enforcement Rules to Personal Information Protection Act, and the foundation will handle the requests immediately.<br>
+                When a subject of information makes a request to revise or destroy personal information, the foundation will neither use nor provide the personal information until the request is handled.<br><br>
+                The right stated under the Article 1 can be exercised through his/her legal representative. In this case, a carte blanche must be presented under the attachment form 11 of the Enforcement Rules to Personal Information Protection Act.<br>
+                A request to inspect and suspend the use of personal information can be limited under clause 5 of Article 35, and clause 2 of Article 37 of Personal Information Protection Act.<br>
+                A request to revise and destroy personal information cannot be made if the information is the subject of collection under the other legislations.<br><br>
+                When a request to inspect, revise, destroy information and suspend the use the information is made, the foundation will check who the person is making the request: whether the person is him/herself or a legal representative.<br>
+                The subject of information has the right to refuse information collection, use, and the provision to a third party. However, in such case, a user will be informed that joining membership of the homepage and using of the service will not be possible.
+            </p>
+        </div>
+        <div id="article7">
+            <h3>Article 7 Destruction of Personal Information</h3>
+            <p>When a management purpose is achieved, the foundation will destroy personal information without delay. Procedures, period, and methods of destruction are as follows:</p>
+            <ol>
+                <li>
+                    <b>Destruction Procedure</b>
+                    <p>When a purpose is achieved, the information provided by users is moved to separate database or document in paper, to be destroyed without delay or to be destroyed after a certain period of time, under the foundation’s regulations or other relevant legist rations. The information in a separate database will not be used for other purposes beyond the cases stated under the legislation.</p>
+                </li>
+                <li>
+                    <b>Destruction Period</b>
+                    <p>When the holding period of users’ personal information is expires, the information will be destroyed within 5 days of the expiration. When personal information becomes unnecessary because the purpose is achieved, the service is ended or the foundation is closed, the information will be destroyed within 5days of the day when the information become unnecessary.</p>
+                </li>
+                <li>
+                    <b>Destruction Methods</b>
+                    <p>The printed personal information will be grinded or burned, and the information in electronic file will be destroyed with technical methods to be irreversible.</p>
+                </li>
+            </ol>
+        </div>
+        <div id="article8">
+            <h3>Article 8. Information Safety Measures</h3>
+            <p>The foundation does the following measures in order to gain safety under the Article 29 of Personal Information Protection Act.</p>
+            <ol>
+                <li>Administrative measures : Planning and execution of the management, regular employee trainings, et cetera.</li>
+                <li>technical measures : access limit of personal information handling system, installation of access control system, coding of individual identification information, installation of security program</li>
+                <li>physical measures : limit an access to data processing room, data storage room and et cetera.</li>
+            </ol>
+        </div>
+        <div id="article9">
+            <h3>Article 9. Personal Information Protection Managers</h3>
+            <p>The foundation designates managers who take overall responsibility for the information protection and persons who handle the personal information, to process any personal information related complaints. (Personal information protection managers under the article 31 of Personal Information Protection Act)</p>
+            <ul>
+                <li>- Personal Information Protection Manager : Kim Young-kyun of Business Planning Team, 02-2077-2900 young0055@nmf.or.kr</li>
+                <li>- A person in charge of personal information protection : Ha Hoon, Business Planning Team, 02-2077-2904 harang@nmf.or.kr</li>
+            </ul>
+        </div>
+        <div id="article10">
+            <h3>Article 10. Changes in Personal Information Management Policies</h3>
+            <p>
+                Personal information management policies will be effective starting on March, 25. 2016.<br>
+                Previous personal information management policies can be checked below.
+            </p>
+            <ul>
+                <li>- February 6, 2014 ~ March 16, 2014 applied policies</li>
+                <li>- March 16, 2014 ~ August 31, 2014 applied policies</li>
+                <li>- September 1, 2014 ~ March 25, 2016 applied policies</li>
+            </ul>
+        </div>
+        <div id="article11">
+            <h3>Article 11. Remedy Procedures of Violation of Rights</h3>
+            <p>
+                The subject of personal information can make a request of remedying damages, consulting, and others, when personal information is infringed.<br>
+                Personal Information Mediation Committee(run by Korea Internet & Security Agency)
+            </p>
+            <ul>
+                <li>- duty: request on mediation on personal information dispute, group dispute mediation(civil case)</li>
+                <li>- website : privacy.kisa.or.kr</li>
+                <li>- phone : (+82) 118</li>
+                <li>- address : Mediation Committee of Korea Internet & Security Agency 135, Joongdae-ro, Songpa-gu, Seoul</li>
+            </ul>
+            <p>Personal Information Infringement Reporting Center ( run by the Korea Internet & Security Agency)</p>
+            <ul>
+                <li>- duty: personal information infringement reporting, consultation request</li>
+                <li>- website : www.kopico.go.kr</li>
+                <li>- phone : (+82) 118</li>
+                <li>- address : Personal Information Infringement Reporting Center of Korea Internet & Security, 135 Joongdae-ro, Songpa-gu, Seoul, 138-950</li>
+            </ul>
+            <p>
+                Cyber Security Capacity team of Supreme Prosecutors’ Office Republic of Korea : (+82)- 02-3480-3578 (www.spo.go.kr)<br>
+                Cyber Terror Response Center, National Police Agency : 1566-0112(www.netan.go.kr)<br>
+                In addition, when any measure and action made as a response to the requests of inspection, revision, destroying and suspending the use of personal information does harm to rights and interests of the subject of the personal information, he or she can request administration trials of Administration Appeals Committee (www.simpan.go.kr) under the Administrative Trials Act.
+            </p>
+        </div>
+        <button type="button" class="btn_green btn_back">Back</button>
+    </div>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="personalInfo.html">Personal Information Management Policies</a></li>
+                <li><a href="refusal.html">Refusal of Unauthorized Collection of Email Addresses</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div>
+            <address>
+                <a href="tel:+8227492333">02-749-2333</a>
+                <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+            </address>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a></li>
+                <li><a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a></li>
+                <li><a href="https://facebook.com/nationalmuseumfoundation" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/muds_museumgoods/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank">Youtube</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                <img src="images/logo_nmf.png" alt="nmf logo">
+                <img src="images/logo.png" alt="muds logo">
+            </h2>
+        </div>
+    </footer>
+</body>
+</html>

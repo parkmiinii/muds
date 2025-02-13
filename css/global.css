@@ -1,0 +1,1573 @@
+[class$='Panel']{
+    display: none;
+}
+[class$='Panel'].active{
+    display: block;
+}
+[class$='Tab']{
+    display: none;
+}
+[class$='Tab'].active{
+    display: block;
+}
+[class$='Popup']{
+    display: none;
+}
+[class$='Popup'].active{
+    display: block;
+}
+
+
+button{
+    font-family: 'nocturne-serif'; color: #24231f; cursor: pointer;
+}
+input[type="button"],
+input[type="submit"]{
+    cursor: pointer; color: #24231f;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance:none;
+  margin: 0;
+}
+/* input:number 에서 증감버튼 없애기 */
+
+.font_cormo{
+    font-family: 'Cormorant'; color: #24231f;
+}
+
+.btn_close{
+    background-image: url('../images/ico_x.png'); background-size: contain;
+    background-position: left; background-color: transparent; 
+    background-repeat: no-repeat;
+    border: none;
+}
+.btn_green{
+    background-color: #9bab8c; background-image: url('../images/footer_bg_texture.png');
+    border: none;
+}
+.btn_darkGreen{
+    background-color: #2e4518; border: none; color: #fff7ea;
+}
+.btn_more{
+    background-color: transparent; border: none; text-transform: capitalize;
+}
+
+.required_info::after{
+    content: '*'; color: #720000;
+}
+
+a{text-decoration: none; color: #24231f;}
+
+body{
+    background-color: #fff7ea; background-image: url('../images/body_bg_-texture.png'); 
+    background-repeat: repeat; font-family: 'nocturne-serif'; color: #24231f; 
+}
+
+div.shopPanel, 
+div.contactPanel,
+div.searchPanel,
+div.accPanel{
+    background-color: #9bab8c; background-image: url('../images/footer_bg_texture.png');
+}
+div.shopPanel, 
+div.contactPanel,
+div.accPanel,
+div.cartPanel{
+    position: fixed; height: 100%;
+}
+div.cartPanel{
+    background-color: #fffaed;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 767px){
+
+    header div,
+    header nav,
+    header nav ol li button,
+    footer{
+        font-size: 14px; font-weight: 300;
+    }
+    
+    .selectComponent select{
+        appearance: none; font-family: inherit; border: 1px solid #c7c7c7; 
+        background-image: url('../images/ico_down.png');
+        background-repeat: no-repeat;
+        background-size: 12px;
+        box-sizing: border-box; background-color: white; 
+    }
+
+    
+    a.btn_top{
+        display: block; width: 36px; line-height: 36px; position: fixed; bottom: 20px; right: 20px;
+    }
+    a.btn_top > img{
+        width: 100%; display: block; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 18px;
+    }
+
+    
+    
+    div.inquireBox{
+        background-color: #9bab8c; background-image: url('../images/footer_bg_texture.png'); z-index: 100; 
+        height: 50px; text-align: center; display: none; font-size: 14px; position: fixed; top: 0; left: 0;
+        width: 100%;
+    }
+    div.inquireBox.active{
+        display: block;
+    }
+    div.inquireBox > span{
+        display: block; line-height: 18px; 
+    }
+    div.inquireBox > span:first-of-type{
+        padding-top: 6px; box-sizing: border-box;
+    }
+    div.inquireBox > span:last-of-type{
+        text-decoration: underline;
+    }
+    div.inquireBox > input.btn_close{
+        position: absolute; right: 10px; top: 5px; width: 12px;
+        text-indent: -9999px;
+    }
+    
+    header{
+        position: fixed; width: 100%; z-index: 100; top:0;
+    }
+    div.inquireBox.active+header{
+        top: 50px;
+    }
+    header > nav{
+        background-color: #fffaed; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        height: 40px; position: relative; padding: 8px 0; box-sizing: border-box;
+    }
+    header > nav > button{
+        position: absolute; right: 10px; top: 10px; background-color: transparent; border: none;
+        background-image: url('../images/ico_menu.png'); width: 18px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat; background-size: contain;
+        padding: 0; 
+    }
+    header > nav > button.active{
+        background-image: url('../images/ico_x.png'); width: 12px;
+    }
+    header > nav > button.active~ol{
+        display: block;
+    }
+    header > nav > ol{
+        z-index: 5000; background-color: #fffaed; margin-top: 40px; width: 100%;
+        padding: 0 15px; display: none;
+    }
+    header > nav > ol > li{
+        display: block; line-height: 40px; text-transform: capitalize; 
+    }
+    header > nav > ol > li > button{
+        border: none; background-color: transparent; 
+        text-transform: inherit; padding: 0;
+    }
+    header > nav > ol > li > button > bdi{
+        font-family: 'Noto Serif TC';
+    }
+    header > nav > ol > li > button > i{
+        margin-left: 10px; font-style: normal;
+    }
+    header > nav > ol:first-of-type{
+        position: absolute; left: 0; top: 0; 
+    }
+    header > nav > ol:first-of-type > li:first-of-type{
+        margin-top: 30px;
+    }
+    header > nav > h1{
+        width: 70px; margin: 0 auto; 
+    }
+    header > nav > h1 > a{
+        display: block;
+    }
+    header > nav > h1 > a > img{
+        display: block; width: 100%;
+    }
+    header > nav > ol:last-of-type{
+        position: absolute; left: 0; top: 150px;
+    }
+    header > nav > ol:last-of-type > li:nth-of-type(2) > button > span{
+        display: inline-block; border: 1px solid #2e4518; border-radius: 10px; font-size: 10px;
+        padding: 2px 4px 0; box-sizing: border-box;
+    }
+    header > nav > ol:last-of-type > li:nth-of-type(3){
+        background: url('../images/ico_language.png') left center / 16px no-repeat;
+        margin-bottom: 50px; 
+    }
+    header > nav > ol:last-of-type > li:nth-of-type(3) > a{
+        padding-left: 32px; 
+    }
+    /* header nav */
+    
+
+    div.shopPanel{
+        top: 90px; z-index: 7000; width: 100%; padding-top: 30px;
+    }
+    div.shopPanel > span{
+        margin-left: 15px; font-size: 14px; line-height: 40px; text-transform: capitalize;
+    }
+    div.shopPanel > span > bdi{
+        font-family: 'Noto Serif TC';
+    }
+    div.shopPanel > span > i{
+        margin-left: 10px;
+    }
+    div.shopPanel input{
+        float: right; margin-right: 10px; width: 12px; line-height: 40px; text-indent: -9999px;
+    }
+    div.shopPanel div:first-of-type{
+        margin: 40px 15px 60px;
+    }
+    div.shopPanel div:first-of-type h2{
+        font-size: 14px; font-weight: 500; text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    div.shopPanel div:first-of-type > ul{
+        font-size: 14px; 
+    }
+    div.shopPanel div:first-of-type > ul > li{
+        display: block; 
+    }
+    div.shopPanel div:first-of-type > ul > li > b{
+        line-height: 40px; text-transform: capitalize; font-weight: 300;
+        border-bottom: 1px solid rgba(180, 199, 163, 1); display: block;
+        transition-property: border-bottom;
+        transition-duration: 0.3s; cursor: pointer;
+        transition-timing-function: ease-in-out;
+    }
+    div.shopPanel div:first-of-type > ul > li.active > b{
+        border-bottom: 0px solid rgba(180, 199, 163, 0);
+    }
+    div.shopPanel div:first-of-type > ul > li > ol{
+        background-color: rgba(180, 199, 163, 0.3); padding: 0 20px;
+        box-shadow: none; box-sizing: border-box;
+        margin-bottom: 0; font-size: 0; opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    div.shopPanel div:first-of-type > ul > li.active > ol{
+        font-size: 14px; opacity: 1; padding: 20px; box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 45px;
+    }
+    div.shopPanel div:first-of-type > ul > li > ol > li{
+        display: block; opacity: 0;
+    }
+    div.shopPanel div:first-of-type > ul > li.active > ol > li{
+        opacity: 1;
+    }
+    div.shopPanel div:first-of-type > ul > li.active > ol > li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    div.shopPanel div:first-of-type > ul > li:last-of-type > a{
+        line-height: 40px; text-transform: capitalize; font-weight: 300;
+        display: block;
+    }
+    div.shopPanel div:last-of-type{
+        margin-left: 15px; margin-bottom: 300px;
+    }
+    div.shopPanel div:last-of-type a{
+        font-size: 14px; font-weight: 500; text-transform: uppercase; display: block;
+    }
+    div.shopPanel div:last-of-type a:first-child{
+        margin-bottom: 50px;
+    }
+    /* shopPanel */
+
+    div.contactPanel{
+        top: 90px; z-index: 7000; width: 100%; padding-top: 30px;
+    }
+    div.contactPanel > span{
+        margin-left: 15px; font-size: 14px; line-height: 40px; text-transform: capitalize;
+    }
+    div.contactPanel > span > bdi{
+        font-family: 'Noto Serif TC';
+    }
+    div.contactPanel > span > i{
+        margin-left: 10px;
+    }
+    div.contactPanel input{
+        float: right; margin-right: 10px; width: 12px; line-height: 40px; text-indent: -9999px;
+    }
+    div.contactPanel div:first-of-type{
+        margin: 40px 15px 60px;
+    }
+    div.contactPanel div:first-of-type a{
+        font-weight: 500; text-transform: capitalize;
+        margin-bottom: 25px; display: block;
+    }
+    div.contactPanel div:nth-of-type(2){
+        margin: 0 15px 60px; font-weight: 300;
+    }
+    div.contactPanel div:nth-of-type(2) address{
+        margin-bottom: 20px; font-style: normal; position: relative;
+    }
+    div.contactPanel div:nth-of-type(2) address::after{
+        content: ''; display: block; clear: both;
+    }
+    div.contactPanel div:nth-of-type(2) address a{
+        display: block; margin-bottom: 35px; text-indent: -9999px; float: left; width: 18px;
+        background-position: left; background-repeat: no-repeat; background-size: 18px;
+        line-height: 18px;
+        position: absolute; bottom: -200px;
+    }
+    /* div.contactPanel div:nth-of-type(2) address a{
+        display: block; margin-bottom: 25px; padding-left: 35px; 
+        background-position: left; background-repeat: no-repeat; background-size: 15px;
+    } */
+    div.contactPanel div:nth-of-type(2) address a:first-of-type{
+        background-image:url(../images/ico_tel.png); margin-right: 30px; left: 0;
+    }
+    div.contactPanel div:nth-of-type(2) address a:last-of-type{
+        background-image:url(../images/ico_mail.png); left: 50px;
+    }
+    div.contactPanel div:nth-of-type(2) address span{
+        display: block; clear: both; 
+        padding-left: 20px; line-height: 18px;
+        background: url(../images/ico_add.png) left top 1px / 12px no-repeat;
+    }
+    div.contactPanel div:nth-of-type(2) p{
+        line-height: 22px; width: 220px;
+    }
+    div.contactPanel div:last-of-type{
+        margin-left: 115px; margin-bottom: 300px;
+    }
+    div.contactPanel div:last-of-type a{
+        display: inline-block; height: 20px;
+    }
+    div.contactPanel div:last-of-type a:not(:first-child){
+        margin-left: 30px;
+    }
+    div.contactPanel div:last-of-type a img{
+        display: block; height: 100%; 
+    }
+    /* contactPanel */
+
+    div.searchPanel{
+        position:fixed; top: 90px; z-index: 7000; width: 100%; padding-top: 30px;
+    }
+    div.searchPanel > span{
+        margin-left: 15px; font-size: 14px; line-height: 40px; text-transform: capitalize;
+    }
+    div.searchPanel > span > bdi{
+        font-family: 'Noto Serif TC';
+    }
+    div.searchPanel > span > i{
+        margin-left: 10px;
+    }
+    div.searchPanel > input{
+        float: right; margin-right: 10px; width: 12px; line-height: 40px; text-indent: -9999px;
+    }
+    div.searchPanel > div{
+        margin: 40px 15px 80px; border-bottom: 1px solid #24231f;
+        display: block;
+    }
+    div.searchPanel > div input{
+        font-size: 14px; font-weight: 300; font-family: inherit; border: none; color: #24231f;
+        background-color: transparent; 
+    }
+    div.searchPanel > div input:first-child{
+        width: 73%; padding: 0;
+    }
+    div.searchPanel > div input:first-child::placeholder{
+        color: #24231f;
+    }
+    div.searchPanel > div input:last-child{
+        float: right; width: 27%; 
+        padding: 0 18px 0 0; text-align: right;
+        background-image: url(../images/ico_arrow.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 15px;
+    }
+    /* searchPanel */
+
+    
+    div.accPanel{
+        top: 90px; z-index: 7000; width: 100%; padding-top: 30px;
+    }
+    div.accPanel > span{
+        margin-left: 15px; font-size: 14px; line-height: 40px; text-transform: capitalize;
+    }
+    div.accPanel > span > bdi{
+        font-family: 'Noto Serif TC';
+    }
+    div.accPanel > span > i{
+        margin-left: 10px;
+    }
+    div.accPanel input{
+        float: right; margin-right: 10px; width: 12px; line-height: 40px; text-indent: -9999px;
+    }
+    div.accPanel ul{
+        margin: 40px 15px 80px;
+    }
+    div.accPanel ul li{
+        font-weight: 500; text-transform: capitalize;
+        margin-bottom: 35px; display: block;
+    }
+    div.accPanel ul li a{
+        display: block;
+    }
+    /* accPanel */
+
+
+    div.cartPanel{
+        left: 0; top: 0; z-index: 9999; width: 100%; z-index: 9999;
+    }
+    div.cartPanel > input{
+        float: right; margin-right: 10px; margin-top: 15px; width: 60px;
+        font-size: 14px; font-weight: 300; font-family: inherit; text-transform: capitalize;
+        padding-left: 15px; line-height: 14px;
+    }
+    div.cartPanel > input.btn_close{
+        background-size: 12px;
+    }
+    div.cartPanel > div.cartProd{
+        margin: 45px 10px 4%; border-top: 1px solid #24231f; height: 90%;
+        position: relative; min-height: 500px;
+    }
+    div.cartPanel > div.cartProd.inactive{
+        display: none;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type h2{
+        display: inline-block; margin: 40px 0 20px; font-size: 16px; font-weight: 400;
+        width: calc(100% - 30px); height: 22px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type button{
+        background-color: transparent; border: none; width: 25px; float: right;
+        margin-top: 40px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type button > img{
+        width: 100%; display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type > img{
+        display: block; width: 130px; margin: 0 auto 25px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul{
+        width: 100%; border-bottom: 1px solid #c7c1ab;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul::after{
+        content: ''; display: block; clear: both;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li{
+        display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li > strong{
+        font-size: 12px; font-weight: 500; text-transform: uppercase;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:first-of-type > strong{
+        margin-bottom: 15px; display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:first-of-type > p{
+        display: block; margin-bottom: 30px; font-size: 14px; font-weight: 300;
+        white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 18px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:nth-of-type(2) > strong{
+        display: inline-block; margin-bottom: 30px;
+    }
+    div.quantity{
+        float: right;
+    }
+    div.quantity > input{
+        background-color: transparent; border: none;
+    }
+    div.quantity > input:first-child{
+        text-indent: -9999px;  cursor: pointer;
+        background-image: url('../images/ico_minus.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+    }
+    div.quantity > input:nth-child(2){
+        width: 40px; text-align: center; font-size: 14px; font-weight: 300; font-family: inherit;
+    }
+    div.quantity > input:last-child{
+        text-indent: -9999px; cursor: pointer;
+        background-image: url('../images/ico_plus.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type > ul > li:last-of-type{
+        margin-bottom: 20px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:last-of-type > strong{
+        display: inline-block; line-height: 18px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:last-of-type > span{
+        font-size: 14px; font-weight: 300; float: right; display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type{
+        border-top: 1px solid #24231f; position: absolute; bottom: 0; width: 100%;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > strong{
+        margin: 30px 0; display: inline-block; font-size: 16px; font-weight: 400;
+        color: #2e4518; text-transform: uppercase; 
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > p{
+        float: right; display: block; margin-top: 30px;
+        font-size: 16px; font-weight: 400; color: #2e4518;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > input[type='submit']{
+        display: block; font-size: 16px; font-weight: 300; font-style: italic; font-family: inherit;
+        text-transform: uppercase; background-image: url('../images/footer_bg_texture.png');
+        background-color: #9bab8c; width: 100%; line-height: 45px; text-align: center;
+        border: none;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > input[type='submit']:hover{
+        color: #fff7ea; background-color: #2e4518;
+    }
+    div.cartPanel > div.cartEmpty{
+        margin: 45px 10px 45px; border-top: 1px solid #24231f;
+        display: none;
+    }
+    div.cartPanel > div.cartEmpty.active{
+        display: block;
+    }
+    div.cartPanel > div.cartEmpty h2{
+        display: block; margin: 150px 0 20px; font-size: 16px; font-weight: 300;
+        width: 100%; text-align: center; text-transform: uppercase;
+        padding-top: 70px; background: url('../images/ico_shop.png') top center / 50px no-repeat;
+    }
+    div.cartPanel > div.cartEmpty span{
+        display: block; font-size: 14px; font-weight: 300; text-transform: uppercase;
+        text-decoration: underline; font-style: italic; width: 100px;
+        background: url('../images/ico_arrow.png') right / 15px no-repeat;
+        margin: 0 auto 300px;
+    }
+    /* cartPanel */
+
+
+    footer{
+        background-color: #9bab8c; 
+        background-image: url('../images/footer_bg_texture.png'), url('../images/footer_ico_mobile.png'), url('../images/footer_ico_mobile.png');
+        background-size: auto, 50px, 50px;
+        background-position: 0px 0px, 2.5% 40px, 97.5% 40px;
+        background-repeat: repeat, no-repeat, no-repeat;
+        padding: 40px 0 40px;
+    }
+    footer div:not(:last-of-type){
+        line-height: 18px; width: 72%; margin: 0 auto;
+    }
+    footer div:first-of-type{
+        margin-bottom: 50px; text-align: center;
+    }
+    footer div:first-of-type ul li{
+        display: block; 
+    }
+    footer div:first-of-type ul li:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    footer div:nth-of-type(2){
+        margin-bottom: 50px;
+    }
+    footer div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    footer div:nth-of-type(2) address::after{
+        content: ''; display: block; clear: both;
+    }
+    footer div:nth-of-type(2) address a{
+        display: block; float: left; 
+    }
+    footer div:nth-of-type(2) address a:first-of-type{
+        background: url('../images/ico_tel.png') left center / 18px no-repeat; 
+        width: 20px; text-indent: -9999px; margin: 0 0 15px calc(50% - 35px);
+        display: block;
+    }
+    footer div:nth-of-type(2) address a:last-of-type{
+        background: url('../images/ico_mail.png') left top 2px/ 18px no-repeat;
+        width: 20px; text-indent: -9999px; margin: 0 0 15px 30px;
+        display: block;
+    }
+    footer div:nth-of-type(2) address span{
+        /* background: url('../images/ico_add.png') left top 2px / 12px no-repeat; */
+        display: block; margin-bottom: 15px; text-align: center;
+        margin: 0 auto 15px; text-align: center;
+        /* padding-left: 20px; width: 70%;   */
+        clear: both;
+    }
+    footer div:nth-of-type(3) ul{
+        text-align: center; margin-bottom: 50px;
+    }
+    footer div:nth-of-type(3) ul li:nth-of-type(1),
+    footer div:nth-of-type(3) ul li:nth-of-type(2){
+        margin-bottom: 15px;  display: block;
+    }
+    footer div:nth-of-type(3) ul li:nth-of-type(3),
+    footer div:nth-of-type(3) ul li:nth-of-type(4),
+    footer div:nth-of-type(3) ul li:nth-of-type(5){
+        display: inline-block;
+    }
+    footer div:nth-of-type(3) ul li:nth-of-type(3),
+    footer div:nth-of-type(3) ul li:nth-of-type(4){
+        margin-right: 8px;
+    }
+    footer div:last-of-type{
+        clear: both; 
+    }
+    footer div:last-of-type h2{
+        text-align: center;
+    }
+    footer div:last-of-type h2 img{
+        display: inline-block; width: 60px;
+    }
+    footer div:last-of-type h2 img:last-of-type{
+        margin-left: 20px;
+    }
+    /* footer */
+}
+/* mobile */
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+
+    header div,
+    header nav,
+    header nav ol li button,
+    footer{
+        font-size: 18px; font-weight: 300;
+    }
+    
+    .selectComponent select{
+        appearance: none; font-family: inherit; border: 1px solid #c7c7c7; 
+        background-image: url('../images/ico_down.png');
+        background-repeat: no-repeat;
+        background-size: 14px;
+        box-sizing: border-box; background-color: white; 
+    }
+
+    
+    a.btn_top{
+        display: block; width: 50px; line-height: 50px; position: fixed; bottom: 20px; right: 20px;
+    }
+    a.btn_top > img{
+        width: 100%; display: block; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+    }
+
+    div.inquireBox{
+        background-color: #9bab8c; background-image: url('../images/footer_bg_texture.png'); z-index: 100; 
+        line-height: 45px; text-align: center; display: none; position: fixed; top: 0; left: 0;
+        width: 100%;
+    }
+    div.inquireBox.active{
+        display: block;
+    }
+    div.inquireBox > span{
+        display: inline-block; line-height: 18px; 
+    }
+    div.inquireBox > span:first-of-type{
+        border-right: 1px solid #24231f; padding-right: 10px; box-sizing: border-box;
+    }
+    div.inquireBox > span:last-of-type{
+        padding-left: 10px; text-decoration: underline;
+    }
+    div.inquireBox > input.btn_close{
+        display: inline-block; position: absolute; right: 24px; top: 13px; width: 18px;
+        text-indent: -9999px;
+    }
+    
+    header{
+        position: fixed; width: 100%; z-index: 100; top:0;
+    }
+    div.inquireBox.active+header{
+        top: 45px;
+    }
+    header > nav{
+        background-color: #fffaed; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        height: 120px; position: relative; padding: 10px 0; box-sizing: border-box;
+    }
+    header > nav > ol{
+        z-index: 5000; margin-top: 60px;
+    }
+    header > nav > ol > li{
+        display: inline-block; line-height: 60px; box-sizing: border-box;
+        text-transform: capitalize; 
+    }
+    header > nav > ol > li > button{
+        border: none; background-color: transparent; 
+        text-transform: inherit;
+    }
+    header > nav > ol > li > button > bdi{
+        font-family: 'Noto Serif TC';
+    }
+    header > nav > ol > li > button > i{
+        margin-left: 10px; font-style: normal;
+    }
+    header > nav > ol:first-of-type{
+        position: absolute; left: 24px; top: 0; 
+    }
+    header > nav > ol:first-of-type > li:nth-of-type(1){
+        padding: 0;
+    }
+    header > nav > ol:first-of-type > li:not(:nth-of-type(1)){
+        padding-left: 15px;
+    }
+    header > nav > h1{
+        width: 120px; margin: 0 auto; 
+    }
+    header > nav > h1 > a{
+        display: block;
+    }
+    header > nav > h1 > a > img{
+        display: block; width: 100%;
+    }
+    header > nav > ol:last-of-type{
+        position: absolute; right: 24px; top: 0;
+    }
+    header > nav > ol:last-of-type > li:not(:nth-of-type(3)){
+        padding-right: 15px;
+    }
+    header > nav > ol:last-of-type > li:nth-of-type(2) > button > span{
+        display: inline-block; border: 1px solid #2e4518; border-radius: 10px; font-size: 12px;
+        padding: 3px 4px 0; box-sizing: border-box;
+    }
+    header > nav > ol:last-of-type > li:nth-of-type(3){
+        background: url('../images/ico_language.png') left center / 20px no-repeat; margin-left: 5px;
+    }
+    header > nav > ol:last-of-type > li:nth-of-type(3) > a{
+        padding-left: 25px; 
+    }
+    /* header nav */
+    
+
+    div.shopPanel{
+        top: 105px; z-index: 100; width: 100%;
+    }
+    div.shopPanel input{
+        float: right; margin-right: 24px; width: 18px; margin-top: 81px;
+        text-indent: -9999px;
+    }
+    div.shopPanel div:first-of-type{
+        margin: 140px 50px 80px;
+    }
+    div.shopPanel div:first-of-type h2{
+        font-size: 18px; font-weight: 500; text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+    div.shopPanel div:first-of-type > ul{
+        font-size: 18px; 
+    }
+    div.shopPanel div:first-of-type > ul > li{
+        display: block; 
+    }
+    div.shopPanel div:first-of-type > ul > li > b{
+        line-height: 45px; text-transform: capitalize; font-weight: 300;
+        border-bottom: 1px solid rgba(180, 199, 163, 1); display: block;
+        transition-property: border-bottom;
+        transition-duration: 0.3s; cursor: pointer;
+        transition-timing-function: ease-in-out;
+    }
+    div.shopPanel div:first-of-type > ul > li.active > b{
+        border-bottom: 0px solid rgba(180, 199, 163, 0);
+    }
+    div.shopPanel div:first-of-type > ul > li > ol{
+        background-color: rgba(180, 199, 163, 0.3); padding: 0 20px;
+        box-shadow: none; box-sizing: border-box;
+        margin-bottom: 0; font-size: 0; opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    div.shopPanel div:first-of-type > ul > li.active > ol{
+        font-size: 18px; opacity: 1; padding: 20px; box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 45px;
+    }
+    div.shopPanel div:first-of-type > ul > li > ol > li{
+        display: block; opacity: 0;
+    }
+    div.shopPanel div:first-of-type > ul > li.active > ol > li{
+        opacity: 1;
+    }
+    div.shopPanel div:first-of-type > ul > li.active > ol > li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    div.shopPanel div:first-of-type > ul > li:last-of-type > a{
+        line-height: 45px; text-transform: capitalize; font-weight: 300;
+        display: block;
+    }
+    div.shopPanel div:last-of-type{
+        margin-left: 50px; margin-bottom: 300px;
+    }
+    div.shopPanel div:last-of-type a{
+        font-size: 18px; font-weight: 500; text-transform: uppercase; display: block;
+    }
+    div.shopPanel div:last-of-type a:first-child{
+        margin-bottom: 50px;
+    }
+    /* shopPanel */
+
+    div.contactPanel{
+        top: 105px; z-index: 100; width: 100%;
+    }
+    div.contactPanel input{
+        float: right; margin-right: 24px; width: 18px; margin-top: 81px;
+        text-indent: -9999px;
+    }
+    div.contactPanel div:first-of-type{
+        margin: 140px 50px 100px;
+    }
+    div.contactPanel div:first-of-type a{
+        font-weight: 500; text-transform: capitalize;
+        margin-bottom: 45px; display: block;
+    }
+    div.contactPanel div:nth-of-type(2){
+        margin: 0 50px 70px; font-weight: 300;
+    }
+    div.contactPanel div:nth-of-type(2) address{
+        margin-bottom: 40px; font-style: normal;
+    }
+    div.contactPanel div:nth-of-type(2) address a{
+        display: block; margin-bottom: 25px; padding-left: 35px;
+        background-position: left; background-repeat: no-repeat; background-size: 15px;
+    }
+    div.contactPanel div:nth-of-type(2) address a:first-of-type{
+        background-image:url(../images/ico_tel.png);
+    }
+    div.contactPanel div:nth-of-type(2) address a:last-of-type{
+        background-image:url(../images/ico_mail.png);
+    }
+    div.contactPanel div:nth-of-type(2) address span{
+        display: block; padding-left: 35px;
+        background: url(../images/ico_add.png) left / 15px no-repeat;
+    }
+    div.contactPanel div:nth-of-type(2) p{
+        line-height: 28px;
+    }
+    div.contactPanel div:last-of-type{
+        margin-left: 50px; margin-bottom: 300px;
+    }
+    div.contactPanel div:last-of-type a{
+        display: inline-block; height: 30px;
+    }
+    div.contactPanel div:last-of-type a:not(:first-child){
+        margin-left: 20px;
+    }
+    div.contactPanel div:last-of-type a img{
+        display: block; height: 100%; 
+    }
+    /* contactPanel */
+
+    div.searchPanel{
+        position: fixed; top: 165px; z-index: 100; width: 100%;
+    }
+    div.searchPanel > input{
+        float: right; margin-right: 24px; width: 18px; margin-top: 21px;
+        text-indent: -9999px;
+    }
+    div.searchPanel > div{
+        margin: 70px 10% 60px; border-bottom: 1px solid #24231f;
+        display: block;
+    }
+    div.searchPanel > div input{
+        font-size: 18px; font-weight: 300; font-family: inherit; border: none; color: #24231f;
+        background-color: transparent; 
+    }
+    div.searchPanel > div input:first-child{
+        width: 80%; 
+    }
+    div.searchPanel > div input:first-child::placeholder{
+        color: #24231f;
+    }
+    div.searchPanel > div input:last-child{
+        float: right; width: 100px; 
+        padding-right: 30px;
+        background-image: url(../images/ico_arrow.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 20px;
+    }
+    /* searchPanel */
+
+    
+    div.accPanel{
+        top: 105px; right: 0; z-index: 100; width: 100%;
+    }
+    div.accPanel input{
+        float: right; margin-right: 24px; width: 18px; margin-top: 81px;
+        text-indent: -9999px;
+    }
+    div.accPanel ul{
+        margin: 140px 50px 0px; text-align: left;
+    }
+    div.accPanel ul li{
+        font-weight: 500; text-transform: capitalize;
+        margin-bottom: 45px; display: block;
+    }
+    div.accPanel ul li a{
+        display: block;
+    }
+    /* accPanel */
+
+    div.cartPanel{
+        right: 0; top: 0; z-index: 9999; width: 50%; z-index: 9999;
+    }
+    div.cartPanel > input{
+        float: right; margin-right: 20px; margin-top: 24px; width: 90px;
+        font-size: 18px; font-weight: 300; font-family: inherit; text-transform: capitalize;
+        padding-left: 20px; line-height: 18px;
+    }
+    div.cartPanel > div.cartProd{
+        margin: 60px 24px 4%; border-top: 1px solid #24231f; height: 90%;
+        position: relative; min-height: 500px;
+    }
+    div.cartPanel > div.cartProd.inactive{
+        display: none;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type{
+        height: 75%;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type h2{
+        display: inline-block; margin: 50px 0 20px; font-size: 22px; font-weight: 400;
+        width: calc(100% - 40px); height: 22px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type button{
+        background-color: transparent; border: none; width: 32px; float: right;
+        margin-top: 48px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type button > img{
+        width: 100%; display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type img{
+        display: block; width: 175px; margin: 0 auto 25px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul{
+        width: 100%; border-bottom: 1px solid #c7c1ab;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul::after{
+        content: ''; display: block; clear: both;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li{
+        display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li > strong{
+        font-size: 14px; font-weight: 500; text-transform: uppercase;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:first-of-type > strong{
+        margin-bottom: 15px; display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:first-of-type > p{
+        display: block; margin-bottom: 30px; font-size: 18px; font-weight: 300;
+        white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:nth-of-type(2) > strong{
+        display: inline-block; margin-bottom: 60px;
+    }
+    div.quantity{
+        float: right;
+    }
+    div.quantity > input{
+        background-color: transparent; border: none;
+    }
+    div.quantity > input:first-child{
+        text-indent: -9999px;  cursor: pointer;
+        background-image: url('../images/ico_minus.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+    }
+    div.quantity > input:nth-child(2){
+        width: 40px; text-align: center; font-size: 18px; font-weight: 300; font-family: inherit;
+    }
+    div.quantity > input:last-child{
+        text-indent: -9999px; cursor: pointer;
+        background-image: url('../images/ico_plus.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type > ul > li:last-of-type{
+        margin-bottom: 20px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:last-of-type > strong{
+        display: inline-block; line-height: 18px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:last-of-type > span{
+        font-size: 18px; font-weight: 300; float: right; display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type{
+        border-top: 1px solid #24231f; position: absolute; bottom: 0; width: 100%;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > strong{
+        margin: 45px 0; display: inline-block; font-size: 22px; font-weight: 400;
+        color: #2e4518; text-transform: uppercase; 
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > p{
+        float: right; display: block; margin-top: 45px;
+        font-size: 22px; font-weight: 400; color: #2e4518;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > input[type='submit']{
+        display: block; font-size: 20px; font-weight: 300; font-style: italic; font-family: inherit;
+        text-transform: uppercase; background-image: url('../images/footer_bg_texture.png');
+        background-color: #9bab8c; width: 100%; line-height: 45px; text-align: center;
+        border: none;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > input[type='submit']:hover{
+        color: #fff7ea; background-color: #2e4518;
+    }
+    div.cartPanel > div.cartEmpty{
+        margin: 60px 24px 45px; border-top: 1px solid #24231f;
+        display: none;
+    }
+    div.cartPanel > div.cartEmpty.active{
+        display: block;
+    }
+    div.cartPanel > div.cartEmpty h2{
+        display: block; margin: 250px 0 30px; font-size: 22px; font-weight: 300;
+        width: 100%; height: 22px; text-align: center; text-transform: uppercase;
+        padding-top: 100px; background: url('../images/ico_shop.png') top center / 70px no-repeat;
+    }
+    div.cartPanel > div.cartEmpty span{
+        display: block; font-size: 18px; font-weight: 300; text-transform: uppercase;
+        text-decoration: underline; font-style: italic; width: 134px;
+        background: url('../images/ico_arrow.png') right / 20px no-repeat;
+        margin: 0 auto 300px;
+    }
+    /* cartPanel */
+
+
+    footer{
+        background-color: #9bab8c; 
+        background-image: url('../images/footer_bg_texture.png'), url('../images/footer_ico_tablet.png'), url('../images/footer_ico_tablet.png');
+        background-size: auto, 75px, 75px;
+        background-position: 0px, 2.5%, 97.5%;
+        background-repeat: repeat, no-repeat, no-repeat;
+        padding: 60px 100px 50px;
+    }
+    footer div:not(:last-of-type){
+        width: 580px; line-height: 24px; margin: 0 auto;
+    }
+    footer div:first-of-type{
+        margin-bottom: 60px; text-align: center;
+    }
+    footer div:first-of-type ul li{
+        display: inline-block; 
+    }
+    footer div:first-of-type ul li:nth-of-type(1),
+    footer div:first-of-type ul li:nth-of-type(2){
+        margin-bottom: 25px;
+    }
+    footer div:first-of-type ul li:nth-of-type(2n-1){
+        margin-right: 25px;
+    }
+    footer div:first-of-type ul li:nth-of-type(2n){
+        padding-left: 25px; border-left: 1px solid #2e4518
+    }
+    footer div:nth-of-type(2){
+        box-sizing: border-box; width: 80%; margin: 0 auto;
+    }
+    footer div:nth-of-type(2) address{
+        font-style: normal; text-align: center;
+    }
+    footer div:nth-of-type(2) address a{
+        display: inline-block; margin-bottom: 25px;
+    }
+    footer div:nth-of-type(2) address a,
+    footer div:nth-of-type(2) address span{
+        padding-left: 35px; 
+    }
+    footer div:nth-of-type(2) address a:first-of-type{
+        background: url('../images/ico_tel.png') left / 18px no-repeat; 
+        margin-right: 25px;
+    }
+    footer div:nth-of-type(2) address a:last-of-type{
+        background: url('../images/ico_mail.png') left 25px center/ 18px no-repeat;
+        padding-left: 60px; border-left: 1px solid #2e4518
+    }
+    footer div:nth-of-type(2) address span{
+        background: url('../images/ico_add.png') left top / 18px no-repeat;
+        display: block; width: 310px; margin: 0 auto 60px;
+    }
+    footer div:nth-of-type(3) ul{
+        text-align: center; margin-bottom: 60px;
+    }
+    footer div:nth-of-type(3) ul li{
+        display: inline-block;
+    }
+    footer div:nth-of-type(3) ul li:nth-of-type(1),
+    footer div:nth-of-type(3) ul li:nth-of-type(2){
+        margin-bottom: 25px; 
+    }
+    footer div:nth-of-type(3) ul li:nth-of-type(1),
+    footer div:nth-of-type(3) ul li:nth-of-type(3),
+    footer div:nth-of-type(3) ul li:nth-of-type(4){
+        margin-right: 25px;
+    }
+    footer div:nth-of-type(3) ul li:nth-of-type(2),
+    footer div:nth-of-type(3) ul li:nth-of-type(4),
+    footer div:nth-of-type(3) ul li:nth-of-type(5){
+        border-left: 1px solid #2e4518; padding-left: 25px;
+    }
+    footer div:last-of-type{
+        clear: both; 
+    }
+    footer div:last-of-type h2{
+        text-align: center;
+    }
+    footer div:last-of-type h2 img{
+        display: inline-block; width: 120px;
+    }
+    footer div:last-of-type h2 img:last-of-type{
+        margin-left: 50px;
+    }
+    /* footer */
+}
+/* tablet */
+
+
+@media screen and (min-width: 1280px){
+    header div,
+    header nav,
+    header nav ol li button,
+    footer{
+        font-size: 18px; font-weight: 300;
+    }
+    
+    .selectComponent select{
+        appearance: none; font-family: inherit; border: 1px solid #c7c7c7; 
+        background-image: url('../images/ico_down.png');
+        background-repeat: no-repeat;
+        background-size: 14px;
+        box-sizing: border-box; background-color: white; 
+    }
+
+    
+    a.btn_top{
+        display: block; width: 50px; line-height: 50px; position: fixed; bottom: 20px; right: 20px;
+    }
+    a.btn_top > img{
+        width: 100%; display: block; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+    }
+    a.btn_top:hover > img{
+        content: url('../images/ico_top2.png');
+    }
+
+    div.inquireBox{
+        background-color: #9bab8c; background-image: url('../images/footer_bg_texture.png'); z-index: 100; 
+        line-height: 45px; text-align: center; display: none; position: fixed; top: 0; left: 0;
+        width: 100%;
+    }
+    div.inquireBox.active{
+        display: block;
+    }
+    div.inquireBox > span{
+        display: inline-block; line-height: 18px; 
+    }
+    div.inquireBox > span:first-of-type{
+        border-right: 1px solid #24231f; padding-right: 10px; box-sizing: border-box;
+    }
+    div.inquireBox > span:last-of-type{
+        padding-left: 10px; text-decoration: underline;
+    }
+    div.inquireBox > input.btn_close{
+        display: inline-block; position: absolute; right: 50px; top: 13px; width: 18px;
+        text-indent: -9999px;
+    }
+    
+    header{
+        position: fixed; width: 100%; z-index: 100; top:0;
+    }
+    div.inquireBox.active+header{
+        top: 45px;
+    }
+    header > nav{
+        background-color: #fffaed; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        line-height: 60px; position: relative; padding: 10px 0; box-sizing: border-box;
+    }
+    header > nav > ol{
+        z-index: 5000;
+    }
+    header > nav > ol > li{
+        display: inline-block; line-height: 60px; box-sizing: border-box;
+        text-transform: capitalize; 
+    }
+    header > nav > ol > li > button{
+        border: none; background-color: transparent; 
+        text-transform: inherit;
+    }
+    header > nav > ol > li > button > bdi{
+        font-family: 'Noto Serif TC';
+    }
+    header > nav > ol > li > button > i{
+        margin-left: 15px; font-style: normal;
+    }
+    header > nav > ol:first-of-type{
+        position: absolute; left: 50px; top: 0; 
+    }
+    header > nav > ol:first-of-type > li:nth-of-type(1){
+        padding: 0;
+    }
+    header > nav > ol:first-of-type > li:not(:nth-of-type(1)){
+        padding-left: 25px;
+    }
+    header > nav > h1{
+        width: 120px; margin: 0 auto; 
+    }
+    header > nav > h1 > a{
+        display: block;
+    }
+    header > nav > h1 > a > img{
+        display: block; width: 100%;
+    }
+    header > nav > ol:last-of-type{
+        position: absolute; right: 50px; top: 0;
+    }
+    header > nav > ol:last-of-type > li:not(:nth-of-type(3)){
+        padding: 0 25px;
+    }
+    header > nav > ol:last-of-type > li:nth-of-type(2) > button > span{
+        display: inline-block; border: 1px solid #2e4518; border-radius: 10px; font-size: 12px;
+        padding: 3px 4px 0; box-sizing: border-box;
+    }
+    header > nav > ol:last-of-type > li:nth-of-type(3){
+        padding-left: 25px; background: url('../images/ico_language.png') left 25px center / 20px no-repeat;
+    }
+    header > nav > ol:last-of-type > li:nth-of-type(3) > a{
+        padding-left: 25px; 
+    }
+    /* header nav */
+    
+
+    div.shopPanel{
+        top: 45px; z-index: 100; width: 600px;
+    }
+    div.shopPanel input{
+        float: right; margin-right: 50px; width: 18px; margin-top: 21px;
+        text-indent: -9999px;
+    }
+    div.shopPanel div:first-of-type{
+        margin: 140px 50px 80px;
+    }
+    div.shopPanel div:first-of-type h2{
+        font-size: 18px; font-weight: 500; text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+    div.shopPanel div:first-of-type > ul{
+        font-size: 18px; 
+    }
+    div.shopPanel div:first-of-type > ul > li{
+        display: block; 
+    }
+    div.shopPanel div:first-of-type > ul > li > b{
+        line-height: 45px; text-transform: capitalize; font-weight: 300;
+        border-bottom: 1px solid rgba(180, 199, 163, 1); display: block;
+        transition-property: border-bottom;
+        transition-duration: 0.3s; cursor: pointer;
+        transition-timing-function: ease-in-out;
+    }
+    div.shopPanel div:first-of-type > ul > li:hover > b{
+        border-bottom: 0px solid rgba(180, 199, 163, 0);
+    }
+    div.shopPanel div:first-of-type > ul > li > ol{
+        background-color: rgba(180, 199, 163, 0.3); padding: 0 20px;
+        box-shadow: none; box-sizing: border-box;
+        margin-bottom: 0; font-size: 0; opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    div.shopPanel div:first-of-type > ul > li:hover > ol{
+        font-size: 18px; opacity: 1; padding: 20px; box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 45px;
+    }
+    div.shopPanel div:first-of-type > ul > li > ol > li{
+        display: block; opacity: 0;
+    }
+    div.shopPanel div:first-of-type > ul > li:hover > ol > li{
+        opacity: 1;
+    }
+    div.shopPanel div:first-of-type > ul > li:hover > ol > li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    div.shopPanel div:first-of-type > ul > li:last-of-type > a{
+        line-height: 45px; text-transform: capitalize; font-weight: 300;
+        display: block;
+    }
+    div.shopPanel div:last-of-type{
+        margin-left: 50px; margin-bottom: 300px;
+    }
+    div.shopPanel div:last-of-type a{
+        font-size: 18px; font-weight: 500; text-transform: uppercase; display: block;
+    }
+    div.shopPanel div:last-of-type a:first-child{
+        margin-bottom: 50px;
+    }
+    /* shopPanel */
+
+    div.contactPanel{
+        top: 45px; z-index: 100; font-size: 18px; width: 600px;
+    }
+    div.contactPanel input{
+        float: right; margin-right: 50px; width: 18px; margin-top: 21px;
+        text-indent: -9999px;
+    }
+    div.contactPanel div:first-of-type{
+        margin: 140px 50px 100px;
+    }
+    div.contactPanel div:first-of-type a{
+        font-weight: 500; text-transform: capitalize;
+        margin-bottom: 45px; display: block;
+    }
+    div.contactPanel div:nth-of-type(2){
+        margin: 0 50px 70px; font-weight: 300;
+    }
+    div.contactPanel div:nth-of-type(2) address{
+        margin-bottom: 40px; font-style: normal;
+    }
+    div.contactPanel div:nth-of-type(2) address a{
+        display: block; margin-bottom: 25px; padding-left: 35px;
+        background-position: left; background-repeat: no-repeat; background-size: 15px;
+    }
+    div.contactPanel div:nth-of-type(2) address a:first-of-type{
+        background-image:url(../images/ico_tel.png);
+    }
+    div.contactPanel div:nth-of-type(2) address a:last-of-type{
+        background-image:url(../images/ico_mail.png);
+    }
+    div.contactPanel div:nth-of-type(2) address span{
+        display: block; padding-left: 35px;
+        background: url(../images/ico_add.png) left / 15px no-repeat;
+    }
+    div.contactPanel div:nth-of-type(2) p{
+        line-height: 28px;
+    }
+    div.contactPanel div:last-of-type{
+        margin-left: 50px; margin-bottom: 300px;
+    }
+    div.contactPanel div:last-of-type a{
+        display: inline-block; height: 30px;
+    }
+    div.contactPanel div:last-of-type a:not(:first-child){
+        margin-left: 20px;
+    }
+    div.contactPanel div:last-of-type a img{
+        display: block; height: 100%; 
+    }
+    /* contactPanel */
+
+    div.searchPanel{
+        position: fixed; top: 105px; z-index: 100; width: 100%;
+    }
+    div.searchPanel > input{
+        float: right; margin-right: 50px; width: 18px; margin-top: 21px;
+        text-indent: -9999px;
+    }
+    div.searchPanel > div{
+        margin: 70px 25% 60px; border-bottom: 1px solid #24231f;
+        display: block;
+    }
+    div.searchPanel > div input{
+        font-size: 18px; font-weight: 300; font-family: inherit; border: none; color: #24231f;
+        background-color: transparent; 
+    }
+    div.searchPanel > div input:first-child{
+        width: 80%; 
+    }
+    div.searchPanel > div input:first-child::placeholder{
+        color: #24231f;
+    }
+    div.searchPanel > div input:last-child{
+        float: right; width: 100px; 
+        padding-right: 30px;
+        background-image: url(../images/ico_arrow.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 20px;
+    }
+    /* searchPanel */
+
+    
+    div.accPanel{
+        right: 0; top: 45px; z-index: 100; width: 600px;
+    }
+    div.accPanel input{
+        float: left; margin-left: 50px; width: 18px; margin-top: 21px;
+        text-indent: -9999px;
+    }
+    div.accPanel ul{
+        margin: 140px 50px 0px; text-align: right;
+    }
+    div.accPanel ul li{
+        font-weight: 500; text-transform: capitalize;
+        margin-bottom: 45px; display: block;
+    }
+    div.accPanel ul li a{
+        display: block;
+    }
+    /* accPanel */
+
+    div.cartPanel{
+        right: 0; top: 0; z-index: 9999; width: 600px; z-index: 9999;
+    }
+    div.cartPanel > input{
+        float: right; margin-right: 20px; margin-top: 24px; width: 90px;
+        font-size: 18px; font-weight: 300; font-family: inherit; text-transform: capitalize;
+        padding-left: 20px; line-height: 18px;
+    }
+    div.cartPanel > div.cartProd{
+        margin: 60px 20px 4%; border-top: 1px solid #24231f; height: 90%;
+        position: relative; min-height: 500px;
+    }
+    div.cartPanel > div.cartProd.inactive{
+        display: none;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type{
+        height: 75%;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type h2{
+        display: inline-block; margin: 50px 0 20px; font-size: 22px; font-weight: 400;
+        width: 515px; height: 22px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type button{
+        background-color: transparent; border: none; width: 32px; float: right;
+        margin-top: 48px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type button > img{
+        width: 100%; display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type img{
+        display: block; width: 175px; float: left; margin-bottom: 50px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul{
+        padding-left: 195px; width: 365px; border-bottom: 1px solid #c7c1ab;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul::after{
+        content: ''; display: block; clear: both;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li{
+        display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li > strong{
+        font-size: 14px; font-weight: 500; text-transform: uppercase;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:first-of-type > strong{
+        margin-bottom: 15px; display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:first-of-type > p{
+        display: block; margin-bottom: 30px; font-size: 18px; font-weight: 300;
+        white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:nth-of-type(2) > strong{
+        display: inline-block; margin-bottom: 60px;
+    }
+    div.quantity{
+        float: right;
+    }
+    div.quantity > input{
+        background-color: transparent; border: none;
+    }
+    div.quantity > input:first-child{
+        text-indent: -9999px; cursor: pointer;
+        background-image: url('../images/ico_minus.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+    }
+    div.quantity > input:nth-child(2){
+        width: 40px; text-align: center; font-size: 18px; font-weight: 300; font-family: inherit;
+    }
+    div.quantity > input:last-child{
+        text-indent: -9999px; cursor: pointer;
+        background-image: url('../images/ico_plus.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:last-of-type > strong{
+        display: inline-block; line-height: 18px; 
+    }
+    div.cartPanel > div.cartProd > form > div:first-of-type ul > li:last-of-type > span{
+        font-size: 18px; font-weight: 300; float: right; display: block;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type{
+        border-top: 1px solid #24231f; position: absolute; bottom: 0;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > strong{
+        margin: 45px 0; display: inline-block; font-size: 22px; font-weight: 400;
+        color: #2e4518; text-transform: uppercase; 
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > p{
+        float: right; display: block; margin-top: 45px;
+        font-size: 22px; font-weight: 400; color: #2e4518;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > input[type='submit']{
+        display: block; font-size: 20px; font-weight: 300; font-style: italic; font-family: inherit;
+        text-transform: uppercase; background-image: url('../images/footer_bg_texture.png');
+        background-color: #9bab8c; width: 560px; line-height: 45px; text-align: center;
+        border: none;
+    }
+    div.cartPanel > div.cartProd > form > div:last-of-type > input[type='submit']:hover{
+        color: #fff7ea; background-color: #2e4518;
+    }
+    div.cartPanel > div.cartEmpty{
+        margin: 60px 20px 45px; border-top: 1px solid #24231f;
+        display: none;
+    }
+    div.cartPanel > div.cartEmpty.active{
+        display: block;
+    }
+    div.cartPanel > div.cartEmpty h2{
+        display: block; margin: 250px 0 30px; font-size: 22px; font-weight: 300;
+        width: 560px; height: 22px; text-align: center; text-transform: uppercase;
+        padding-top: 100px; background: url('../images/ico_shop.png') top center / 70px no-repeat;
+    }
+    div.cartPanel > div.cartEmpty span{
+        display: block; font-size: 18px; font-weight: 300; text-transform: uppercase;
+        text-decoration: underline; font-style: italic; width: 134px;
+        background: url('../images/ico_arrow.png') right / 20px no-repeat;
+        margin: 0 auto 300px;
+    }
+    /* cartPanel */
+
+
+
+    footer{
+        background-color: #9bab8c; 
+        background-image: url('../images/footer_bg_texture.png'), url('../images/footer_ico_bg_desktop.png'), url('../images/footer_ico_bg_desktop.png');
+        background-size: auto, contain, contain;
+        background-position: 0px, 2.5%, 97.5%;
+        background-repeat: repeat, no-repeat, no-repeat;
+        padding: 60px 150px 50px;
+    }
+    footer div:not(:last-of-type){
+        float: left; width: 30%; line-height: 24px;
+    }
+    footer div:nth-of-type(2){
+        margin: 0 5%; padding-left: 5%; box-sizing: border-box;
+    }
+    footer div:first-of-type ul li,
+    footer div:nth-of-type(2) address a,
+    footer div:nth-of-type(2) address span,
+    footer div:nth-of-type(3) ul li{
+        display: block; margin-bottom: 25px;
+    }
+    footer div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    footer div:nth-of-type(2) address a,
+    footer div:nth-of-type(2) address span{
+        padding-left: 35px;
+    }
+    footer div:nth-of-type(2) address a:first-of-type{background: url('../images/ico_tel.png') left / 18px no-repeat;}
+    footer div:nth-of-type(2) address a:last-of-type{background: url('../images/ico_mail.png') left / 18px no-repeat;}
+    footer div:nth-of-type(2) address span{background: url('../images/ico_add.png') left top / 18px no-repeat;}
+    footer div:nth-of-type(3) ul{
+        text-align: right;
+    }
+    footer div:last-of-type{
+        clear: both; 
+    }
+    footer div:last-of-type h2{
+        text-align: center; 
+    }
+    footer div:last-of-type h2 img{
+        display: inline-block;
+    }
+    footer div:last-of-type h2 img:last-of-type{
+        margin-left: 50px;
+    }
+    /* footer */
+}
+/* desktop */

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDS</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="inquireBox active">
+        <span>Private Inquiry</span>
+        <span><a href="writeInquiry.html">Write &amp; Submit 1:1 Question</a></span>
+        <input type="button" value="close" class="btn_close">
+    </div>
+    <header>
+        <div class="shopPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <h2>categories</h2>
+                <ul>
+                    <li>
+                        <b>stationery</b>
+                        <ol>
+                            <li><a href="list_notebook.html">Notebooks / Planners</a></li>
+                            <li><a href="list_writing.html">Writing utensils</a></li>
+                            <li><a href="list_cards.html">Cards / Postcards</a></li>
+                            <li><a href="list_business.html">Business card holders</a></li>
+                            <li><a href="list_stationery_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Fashion</b>
+                        <ol>
+                            <li><a href="list_handkerchiefs.html">handkerchiefs / Scarves</a></li>
+                            <li><a href="list_bags.html">Bags / Wallets</a></li>
+                            <li><a href="list_accessories.html">Accessories</a></li>
+                            <li><a href="list_umbrellas.html">Umbrellas / Parasols</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Digital / Mobile</b>
+                        <ol>
+                            <li><a href="list_mobile.html">Mobile accessories</a></li>
+                            <li><a href="list_chargers.html">Chargers</a></li>
+                            <li><a href="list_smartToks.html">Smart toks</a></li>
+                            <li><a href="list_digital_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Crafts</b>
+                        <ol>
+                            <li><a href="list_nacre.html">Nacre</a></li>
+                            <li><a href="list_ceramic.html">Ceramic</a></li>
+                            <li><a href="list_metal.html">Metal</a></li>
+                            <li><a href="list_craft_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Interior props</b>
+                        <ol>
+                            <li><a href="list_miniature.html">Miniatures</a></li>
+                            <li><a href="list_incense.html">Incense / Fragrance / Candles</a></li>
+                            <li><a href="list_lamps.html">Lamps / Lights</a></li>
+                            <li><a href="list_art.html">Art prints</a></li>
+                            <li><a href="list_cushions.html">Cushions / Fabrics</a></li>
+                            <li><a href="list_interior_andMore.html">And more</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="list_sale.html">Sale</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="list_new.html">new arrival</a>
+                <a href="list_popular.html">popular</a>
+            </div>
+        </div>
+        <!-- shopPanel fin -->
+
+        <div class="contactPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <a href="announce_list.html">announcement</a>
+                <a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a>
+                <a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div>
+                <address>
+                    <a href="tel:+8227492333">02-749-2333</a>
+                    <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                    <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+                </address>
+                <p>Hours 10:00 AM ~ 4:00 PM / Lunch Break:12:00 PM~1:30 PM<br>Closed Sat, Sun, Public Holidays</p>
+            </div>
+            <div>
+                <a href="https://facebook.com/nationalmuseumfoundation" target="_blank"><img src="images/ico_sns_facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/muds_museumgoods/" target="_blank"><img src="images/ico_sns_instagram.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank"><img src="images/ico_sns_youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <!-- contactPanel fin -->
+
+        <div class="searchPanel">
+            <input type="button" value="close" class="btn_close">
+            <div>
+                <form action="list_accessories.html">
+                    <input type="search" placeholder="What are you looking for?">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+        <!-- searchPanel fin -->
+
+        <div class="accPanel">
+            <input type="button" value="close" class="btn_close">
+            <ul>
+                <li><a href="logIn.html">Log in</a></li>
+                <li><a href="trackOrders.html">Track orders</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="inquiry.html">1:1 Inquiry</a></li>
+                <li><a href="withdrawal.html">Withdrawal</a></li>
+            </ul>
+        </div>
+        <!-- accPanel -->
+
+        <div class="cartPanel">
+            <input type="button" value="close" class="btn_close">
+            <div class="cartProd">
+                <form action="checkOut_01.html">
+                    <div>
+                        <h2>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</h2>
+                        <button type="button" data-panel="cartEmpty"><img src="images/ico_del.png" alt="delete"></button>
+                        <img src="images/product/5_interiorProps/6_andMore/13/1.jpg" alt="product image">
+                        <ul>
+                            <li>
+                                <strong>options</strong>
+                                <p>Gold crown ornaments patterns from Tombs of King Muryeong Spoon and Chopsticks Set</p>
+                            </li>
+                            <li>
+                                <strong>quantity</strong>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="quantMinus">
+                                    <input type="number" class="quantNumb" id="quantNumb" value="1" min="1" max="99" step="1">
+                                    <input type="button" value="+" class="quantPlus">
+                                </div>
+                            </li>
+                            <li>
+                                <strong>price</strong>
+                                <span>KRW 30,000</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>total</strong>
+                        <p>KRW <output id="totalPrice">30000</output></p>
+                        <input type="submit" value="check out" class="btn_green">
+                    </div>
+                </form>
+            </div>
+            <div class="cartEmpty">
+                <h2>your cart is empty</h2>
+                <span><a href="list_notebook.html">shop now</a></span>
+            </div>
+        </div>
+        <!-- cartPanel fin -->
+        
+        <nav>
+            <ol>
+                <li>
+                    <button type="button" data-panel="shopPanel">
+                        <bdi>一.</bdi>
+                        <i>shop</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="contactPanel">
+                        <bdi>二.</bdi>
+                        <i>contact</i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-panel="searchPanel">
+                        <bdi>三.</bdi>
+                        <i>search</i>
+                    </button>
+                </li>
+            </ol>
+            <h1><a href="index.html"><img src="images/logo.png" alt="MUDS"></a></h1>
+            <ol>
+                <li>
+                    <button type="button" data-panel="accPanel">
+                        <bdi>四.</bdi>
+                        <i>account</i>
+                    </button>
+                    
+                </li>
+                <li>
+                    <button type="button" data-panel="cartPanel">
+                        <bdi>五.</bdi>
+                        <i>cart</i>
+                        <span>+99</span>
+                    </button>
+                </li>
+                <li><a href="https://www.museumshop.or.kr/kor/main.do" target="_blank">ko</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="faqContainer">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <ul>
+            <li><button type="button" data-tabName="faq1Tab" class="active">General</button></li>
+            <li><button type="button" data-tabName="faq2Tab">After-sales Support</button></li>
+            <li><button type="button" data-tabName="faq3Tab">Shipping</button></li>
+            <li><button type="button" data-tabName="faq4Tab">Orders and Payment</button></li>
+        </ul>
+        <ol class="faq1Tab active">
+            <li>
+                <strong>Q.</strong>
+                <h3>There's a defect in the product that I received, is it possible to have it exchanged?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>If the product you have received is defective, you may either receive a refund or exchange. However, exchanges are normally allowed for the same product.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Are sample photographs for different types of giftwrapping available?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>These are examples of the different types of giftwrapping.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>I'd like an exchange because of a defective product.</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>
+                        If the product you have received is different from the one you have ordered, or the product you received is damaged, you may request an exchange from the vendor.<br>
+                        Please contact the vendor and request an exchange.<br>
+                        For exchanges not related to damaged products, the purchaser may be required to pay the shipping fee.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Will I have to pay for shipping when receiving an exchange?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>In short, for "change of heart" exchanges not resulting from damaged products, the purchaser will be responsible for the round-trip shipping fee, and for exchanges resulting from product defects or reasons for which the vendor is</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>How do I exchange or return an item?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>You can exchange an item through our 1:1 chat service or call 02-2077-2943. Exchanges for non-defective merchandise are accepted within 7 days with a shipping fee. Exchanges for defective items are accepted within 10 days without a shipping fee. Exchange is only possible when the same item is available, otherwise we will refund the item price.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Is there a shipping fee?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>Overseas shipping fee will be charged to the buyer.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>The product was returned because nobody was at home to receive the package.</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>Check with the shipping/postal company and contact them first to determine whether the product was returned. If the product has already been returned to the vendor, then contact the vendor directly to confirm your intent to make</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>I tried to track my shipment using the post tracking number, but it says it's unavailable.</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>When your order does not show up through the post tracking function, it is usually because of a delay between the vendor shipping the product and inputting the tracking number, and the postal company actually processing the</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>How long does shipping take?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <ul>
+                        <li>- For Shipping estimates please consult the Korea Post website</li>
+                        <li>- Overseas shipping is handled through Korean Post EMS. To place a request for overseas shipping, please contact 02-2077-2942</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Can I receive packages in the weekends?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>Normally, shipping is only possible during weekdays. Shipping is unavailable during public holidays.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>I want to check the status of my order.</h3>
+                <div>
+                    <strong>A.</strong>
+                    <ol>
+                        <li>Pending Payment : Your order has been placed and is waiting for payment confirmation.</li>
+                        <li>Pending Shipping : Your order has not been transferred to the seller yet after payment confirmation (usually takes one minute to fifteen minutes). You can directly change your payment or shipping information, or place an immediate cancellation if necessary.</li>
+                        <li>Shipping Request : The seller confirmed your order. You cannot change your payment or shipping information. To modify your information, please call the seller or customer service (1544-5955). To cancel your order, make a separate request. Cancellation depends on shipping status. Please note that cancellation is not possible once the product has been shipped.</li>
+                        <li>Out for Delivery : Your product is out for delivery. You cannot change your shipping information, but you can request a refund after receiving the product.</li>
+                        <li>Shipping Completed : The customer received the ordered product. You can track shipping with a tracking number and your purchase record will be automatically transferred to “shipping completed” after two or three days following delivery. You can confirm this within three days.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>For bank transfer, is it correct to see the name "C-Square"?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>
+                        When you make bank transfer, the name "C-Square" will appear.<br>
+                        C-Square is in a business partnership with the Cultural Foundation of the National Museum of Korea.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Can I pay with a check card?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>
+                        Use check cards like credit cards.<br>
+                        (However, installation payments are not allowed.)<br>
+                        Check card is a combination of debit card and credit card.<br>
+                        You can use a check card at stores accepting credit card payments. You must have a sufficient balance in your bank account to make a purchase.<br>
+                        For check card payments, the refund process may be different based on card companies. Please contact your card company for details.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>How can I pay with a credit card?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>How to pay with a credit card:</p>
+                    <ol>
+                        <li>
+                            <p>Choose your credit card from the payment information list.</p>
+                            <ul>
+                                <li>-Internet Secure Payment (ISP) Card: KB, BC, Woori cards</li>
+                                <li>-Security Click Service Card: Samsung, Hana, Shinhan (Joheung, LG), Lotte, Hyundai, Hanmi, City, Guangju, Jeonbuk, Suhyeop, KDB cards</li>
+                                <li>-General Card: Credit card except those ones above</li>
+                                <li>-International Card: International Card</li>
+                            </ul>
+                        </li>
+                        <li>
+                            After entering your card information, click Confirm.
+                        </li>
+                        <li>
+                            The payment is processed in ISP or Secure Click Service windows and will be completed after identification verification.
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Can I pay with bank transfer without accredited certificate?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>For bank transfer, you must have an accredited certificate. You can obtain one when you apply for an internet banking service at a nearby bank.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>What payment methods do you have?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <span>[Cash Payment]</span>
+                    <ol>
+                        <li>
+                            <b>Cash Payment</b>
+                            <p>Deposit money to your personalized account via internet banking, phone banking, and bank counter deposit.</p>
+                        </li>
+                        <li>
+                            <b>Bank Transfer</b>
+                            <p>Transfer money directly from your bank account during the order process. This requires an accredited certificate.</p>
+                        </li>
+                    </ol>
+                    <span>[Credit Card Payment]</span>
+                    <ol>
+                        <li>Internet Secure Payment (ISP) Card: KB, BC, and Woori credit cards.</li>
+                        <li>Security Click Service Card: Samsung, Hana, Shinhan (Joheung, LG), Lotte, Hyundai, Hanmi, City, Guangju, Jeonbuk, Suhyeop, and KDB credit cards.</li>
+                        <li>General Card: Credit cards except those ones above.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>When can I see payment confirmation?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <ul>
+                        <li>▶Weekdays: Within four hours after bank transfer.</li>
+                        <li>▶Weekends and public holidays: A day after weekend or holiday</li>
+                    </ul>
+                    <p>
+                        Payment confirmation can be provided only when the purchaser's information matches that of the payer.<br>
+                        Confirmation email will be sent to your email account and a text message will be sent to your cellphone upon SMS request.<br>
+                        If you haven't received payment confirmation after 24 hours during weekdays, please send your payment day, name, bank information, and the amount of payment to our "1:1 Inquiry." We will respond shortly.
+                    </p>
+                </div>
+            </li>
+        </ol>
+        <ol class="faq2Tab">
+            <li>
+                <strong>Q.</strong>
+                <h3>There's a defect in the product that I received, is it possible to have it exchanged?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>If the product you have received is defective, you may either receive a refund or exchange. However, exchanges are normally allowed for the same product.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>I'd like an exchange because of a defective product.</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>
+                        If the product you have received is different from the one you have ordered, or the product you received is damaged, you may request an exchange from the vendor.<br>
+                        Please contact the vendor and request an exchange.<br>
+                        For exchanges not related to damaged products, the purchaser may be required to pay the shipping fee.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Will I have to pay for shipping when receiving an exchange?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>In short, for "change of heart" exchanges not resulting from damaged products, the purchaser will be responsible for the round-trip shipping fee, and for exchanges resulting from product defects or reasons for which the vendor is</p>
+                </div>
+            </li>
+        </ol>
+        <ol class="faq3Tab">
+            <li>
+                <strong>Q.</strong>
+                <h3>Is there a shipping fee?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>Overseas shipping fee will be charged to the buyer.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>The product was returned because nobody was at home to receive the package.</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>Check with the shipping/postal company and contact them first to determine whether the product was returned. If the product has already been returned to the vendor, then contact the vendor directly to confirm your intent to make</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>I tried to track my shipment using the post tracking number, but it says it's unavailable.</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>When your order does not show up through the post tracking function, it is usually because of a delay between the vendor shipping the product and inputting the tracking number, and the postal company actually processing the</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>How long does shipping take?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <ul>
+                        <li>- For Shipping estimates please consult the Korea Post website</li>
+                        <li>- Overseas shipping is handled through Korean Post EMS. To place a request for overseas shipping, please contact 02-2077-2942</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Can I receive packages in the weekends?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>Normally, shipping is only possible during weekdays. Shipping is unavailable during public holidays.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>I want to check the status of my order.</h3>
+                <div>
+                    <strong>A.</strong>
+                    <ol>
+                        <li>Pending Payment : Your order has been placed and is waiting for payment confirmation.</li>
+                        <li>Pending Shipping : Your order has not been transferred to the seller yet after payment confirmation (usually takes one minute to fifteen minutes). You can directly change your payment or shipping information, or place an immediate cancellation if necessary.</li>
+                        <li>Shipping Request : The seller confirmed your order. You cannot change your payment or shipping information. To modify your information, please call the seller or customer service (1544-5955). To cancel your order, make a separate request. Cancellation depends on shipping status. Please note that cancellation is not possible once the product has been shipped.</li>
+                        <li>Out for Delivery : Your product is out for delivery. You cannot change your shipping information, but you can request a refund after receiving the product.</li>
+                        <li>Shipping Completed : The customer received the ordered product. You can track shipping with a tracking number and your purchase record will be automatically transferred to “shipping completed” after two or three days following delivery. You can confirm this within three days.</li>
+                    </ol>
+                </div>
+            </li>
+        </ol>
+        <ol class="faq4Tab">
+            <li>
+                <strong>Q.</strong>
+                <h3>Are sample photographs for different types of giftwrapping available?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>These are examples of the different types of giftwrapping.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>How do I exchange or return an item?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>You can exchange an item through our 1:1 chat service or call 02-2077-2943. Exchanges for non-defective merchandise are accepted within 7 days with a shipping fee. Exchanges for defective items are accepted within 10 days without a shipping fee. Exchange is only possible when the same item is available, otherwise we will refund the item price.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>For bank transfer, is it correct to see the name "C-Square"?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>
+                        When you make bank transfer, the name "C-Square" will appear.<br>
+                        C-Square is in a business partnership with the Cultural Foundation of the National Museum of Korea.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Can I pay with a check card?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>
+                        Use check cards like credit cards.<br>
+                        (However, installation payments are not allowed.)<br>
+                        Check card is a combination of debit card and credit card.<br>
+                        You can use a check card at stores accepting credit card payments. You must have a sufficient balance in your bank account to make a purchase.<br>
+                        For check card payments, the refund process may be different based on card companies. Please contact your card company for details.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>How can I pay with a credit card?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>How to pay with a credit card:</p>
+                    <ol>
+                        <li>
+                            <p>Choose your credit card from the payment information list.</p>
+                            <ul>
+                                <li>-Internet Secure Payment (ISP) Card: KB, BC, Woori cards</li>
+                                <li>-Security Click Service Card: Samsung, Hana, Shinhan (Joheung, LG), Lotte, Hyundai, Hanmi, City, Guangju, Jeonbuk, Suhyeop, KDB cards</li>
+                                <li>-General Card: Credit card except those ones above</li>
+                                <li>-International Card: International Card</li>
+                            </ul>
+                        </li>
+                        <li>
+                            After entering your card information, click Confirm.
+                        </li>
+                        <li>
+                            The payment is processed in ISP or Secure Click Service windows and will be completed after identification verification.
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>Can I pay with bank transfer without accredited certificate?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <p>For bank transfer, you must have an accredited certificate. You can obtain one when you apply for an internet banking service at a nearby bank.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>What payment methods do you have?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <span>[Cash Payment]</span>
+                    <ol>
+                        <li>
+                            <b>Cash Payment</b>
+                            <p>Deposit money to your personalized account via internet banking, phone banking, and bank counter deposit.</p>
+                        </li>
+                        <li>
+                            <b>Bank Transfer</b>
+                            <p>Transfer money directly from your bank account during the order process. This requires an accredited certificate.</p>
+                        </li>
+                    </ol>
+                    <span>[Credit Card Payment]</span>
+                    <ol>
+                        <li>Internet Secure Payment (ISP) Card: KB, BC, and Woori credit cards.</li>
+                        <li>Security Click Service Card: Samsung, Hana, Shinhan (Joheung, LG), Lotte, Hyundai, Hanmi, City, Guangju, Jeonbuk, Suhyeop, and KDB credit cards.</li>
+                        <li>General Card: Credit cards except those ones above.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <strong>Q.</strong>
+                <h3>When can I see payment confirmation?</h3>
+                <div>
+                    <strong>A.</strong>
+                    <ul>
+                        <li>▶Weekdays: Within four hours after bank transfer.</li>
+                        <li>▶Weekends and public holidays: A day after weekend or holiday</li>
+                    </ul>
+                    <p>
+                        Payment confirmation can be provided only when the purchaser's information matches that of the payer.<br>
+                        Confirmation email will be sent to your email account and a text message will be sent to your cellphone upon SMS request.<br>
+                        If you haven't received payment confirmation after 24 hours during weekdays, please send your payment day, name, bank information, and the amount of payment to our "1:1 Inquiry." We will respond shortly.
+                    </p>
+                </div>
+            </li>
+        </ol>
+        <button type="button" class="btn_green">Back</button>
+    </div>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="personalInfo.html">Personal Information Management Policies</a></li>
+                <li><a href="refusal.html">Refusal of Unauthorized Collection of Email Addresses</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div>
+            <address>
+                <a href="tel:+8227492333">02-749-2333</a>
+                <a href="mailto:museumshop@nmf.or.kr">museumshop@nmf.or.kr</a>
+                <span>137 Seobinggo-ro, Yongsan-gu, Seoul</span>
+            </address>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.nmf.or.kr/enguser/main/main.do" target="_blank">National Museum Foundation of Korea</a></li>
+                <li><a href="https://www.nmf.or.kr/enguser/sub/20181203184344817100_contents.do/" target="_blank">Offline store</a></li>
+                <li><a href="https://facebook.com/nationalmuseumfoundation" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/muds_museumgoods/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UC7P4WeJDc-QGPpYGUzRIquA" target="_blank">Youtube</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                <img src="images/logo_nmf.png" alt="nmf logo">
+                <img src="images/logo.png" alt="muds logo">
+            </h2>
+        </div>
+    </footer>
+</body>
+</html>
