@@ -706,7 +706,7 @@ html{
         padding: 0;
     }
     header > nav > ol:first-of-type > li:not(:nth-of-type(1)){
-        padding-left: 15px;
+        padding-left: 10px;
     }
     header > nav > h1{
         width: 120px; margin: 0 auto; 
@@ -721,7 +721,7 @@ html{
         position: absolute; right: 24px; top: 0;
     }
     header > nav > ol:last-of-type > li:not(:nth-of-type(3)){
-        padding-right: 15px;
+        padding-right: 10px;
     }
     header > nav > ol:last-of-type > li:nth-of-type(2) > button > span{
         display: inline-block; border: 1px solid #2e4518; border-radius: 10px; font-size: 12px;
