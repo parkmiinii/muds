@@ -1,6 +1,0 @@
-[class$='Panel']{
-    display: none;
-}
-[class$='Panel'].active{
-    display: block;
-}
