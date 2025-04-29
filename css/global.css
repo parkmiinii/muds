@@ -315,10 +315,6 @@ html{
         line-height: 18px;
         position: absolute; bottom: -200px;
     }
-    /* div.contactPanel div:nth-of-type(2) address a{
-        display: block; margin-bottom: 25px; padding-left: 35px; 
-        background-position: left; background-repeat: no-repeat; background-size: 15px;
-    } */
     div.contactPanel div:nth-of-type(2) address a:first-of-type{
         background-image:url(../images/ico_tel.png); margin-right: 30px; left: 0;
     }
