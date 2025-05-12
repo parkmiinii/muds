@@ -4710,7 +4710,7 @@
         transition: all .5s ease-in-out;
     }
     div.listFilter > button.active+form > div{
-        height: auto; font-size: 18px; opacity: 1; list-style: 18px;
+        height: auto; font-size: 18px; opacity: 1;
         padding-top: 80px;
     }
     div.listFilter > form > div *{
